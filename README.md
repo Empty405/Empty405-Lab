@@ -110,9 +110,37 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for contribution guidelines.
 
 ## Current Research
 
-The laboratory is just beginning.
+### 001 — MCP Inference Security
 
-The first research entries will be added here as they are prepared for public review.
+**Status:** Experimental Research  
+**Research:** Complete through initial gap analysis  
+**Experiment:** v0.1 completed  
+**Reproducibility:** 1000 randomized runs, fixed seed `405`
+
+Research question:
+
+> Can lightweight cumulative exposure accounting and adaptive disclosure reduce cross-tool state reconstruction more effectively than conventional time-based rate limiting?
+
+Current v0.1 result:
+
+| Mode | Reconstruction Score | Observable State |
+|---|---:|---:|
+| Baseline | 93.83% | 100.00% |
+| Rate Limit + Waiting | 93.83% | 100.00% |
+| Hard Coverage Policy | 52.13% | 55.56% |
+| Adaptive Disclosure | 75.71% | 77.78% |
+
+The toy experiment suggests that conventional time-based rate limiting may delay cumulative collection without reducing the final observable state, while coverage-aware controls can change the final reconstruction outcome.
+
+This is a synthetic proof-of-concept and does not establish an MCP vulnerability or justify a protocol change.
+
+Research:
+
+[`research/001-mcp-inference-security/`](research/001-mcp-inference-security/)
+
+Experiment:
+
+[`experiments/001-mcp-inference-security/`](experiments/001-mcp-inference-security/)
 
 ---
 
