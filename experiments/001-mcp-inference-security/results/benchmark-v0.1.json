@@ -1,0 +1,32 @@
+{
+  "runs": 1000,
+  "random_seed": 405,
+  "baseline": {
+    "mean_reconstruction_score": 93.83,
+    "min_score": 93.83,
+    "max_score": 93.83,
+    "mean_observable_percent": 100.0
+  },
+  "rate_limit_with_waiting": {
+    "mean_reconstruction_score": 93.83,
+    "min_score": 93.83,
+    "max_score": 93.83,
+    "mean_observable_percent": 100.0
+  },
+  "hard_coverage_policy": {
+    "mean_reconstruction_score": 52.13,
+    "min_score": 50.78,
+    "max_score": 53.39,
+    "mean_observable_percent": 55.56
+  },
+  "adaptive_disclosure": {
+    "mean_reconstruction_score": 75.71,
+    "min_score": 73.83,
+    "max_score": 77.44,
+    "mean_observable_percent": 77.78
+  },
+  "metric_notes": {
+    "normalized_score": "Each cell receives a score from 0 to 1. Unknown cells score 0. Known cells lose one percentage point per absolute error unit.",
+    "purpose": "Compare all modes using the same metric while penalizing hidden or unavailable cells."
+  }
+}
