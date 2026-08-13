@@ -1,0 +1,19 @@
+{
+  "locations": {
+    "north": {
+      "fuel": 82,
+      "medical": 31,
+      "food": 64
+    },
+    "central": {
+      "fuel": 17,
+      "medical": 76,
+      "food": 43
+    },
+    "south": {
+      "fuel": 55,
+      "medical": 12,
+      "food": 91
+    }
+  }
+}
