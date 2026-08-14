@@ -1,0 +1,92 @@
+version: "0.1"
+
+principle: "Make the experiment harder before making the claim larger."
+
+stages:
+  - id: intake
+    actor: human_or_agent
+    requires:
+      - title
+      - raw_idea
+    produces:
+      - research_question
+      - initial_claim
+
+  - id: scout
+    actor: scout
+    requires:
+      - research_question
+    produces:
+      - prior_art
+      - terminology
+      - source_map
+
+  - id: critic
+    actor: critic
+    requires:
+      - initial_claim
+      - prior_art
+    produces:
+      - narrowed_claim
+      - novelty_boundary
+      - strongest_objections
+
+  - id: experiment_design
+    actor: experimenter
+    requires:
+      - narrowed_claim
+      - strongest_objections
+    produces:
+      - hypothesis
+      - falsification_criteria
+      - success_criteria
+      - experiment_plan
+      - metrics
+
+  - id: execution
+    actor: executor
+    requires:
+      - experiment_plan
+      - reproducibility
+    produces:
+      - raw_results
+      - execution_log
+
+  - id: review
+    actor: reviewer
+    requires:
+      - raw_results
+      - hypothesis
+      - falsification_criteria
+    produces:
+      - interpretation
+      - limitations
+      - claim_audit
+      - outcome
+
+  - id: publication
+    actor: publisher
+    requires:
+      - outcome
+      - claim_audit
+      - limitations
+      - reproducibility
+    produces:
+      - article
+      - results_summary
+      - next_questions
+
+outcomes:
+  - supported
+  - mixed
+  - falsified
+  - inconclusive
+  - blocked
+
+guardrails:
+  - "Do not invent experimental results."
+  - "Do not describe prior art as original contribution."
+  - "Do not increase claim strength after a negative result."
+  - "Keep source-derived statements distinguishable from inference."
+  - "Record reproducibility information before publication."
+  - "A falsified hypothesis is a successful research outcome."

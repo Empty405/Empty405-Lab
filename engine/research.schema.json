@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://empty405.local/schemas/research-v0.1.json",
+  "title": "Empty405 Research Record",
+  "type": "object",
+  "required": [
+    "engine_version",
+    "research",
+    "question",
+    "hypothesis",
+    "falsification",
+    "experiment",
+    "reproducibility",
+    "review"
+  ],
+  "properties": {
+    "engine_version": {
+      "const": "0.1"
+    },
+    "research": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "slug",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^\\d{3,}$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "status": {
+          "enum": [
+            "idea",
+            "scouting",
+            "designed",
+            "running",
+            "review",
+            "publish-ready",
+            "archived"
+          ]
+        }
+      }
+    },
+    "question": {
+      "type": "string"
+    },
+    "raw_idea": {
+      "type": "string"
+    },
+    "initial_claim": {
+      "type": "string"
+    },
+    "narrowed_claim": {
+      "type": "string"
+    },
+    "hypothesis": {
+      "type": "string"
+    },
+    "prior_art": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "strongest_objections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "falsification": {
+      "type": "object",
+      "required": [
+        "criteria"
+      ],
+      "properties": {
+        "criteria": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "success_criteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "experiment": {
+      "type": "object",
+      "required": [
+        "plan",
+        "metrics"
+      ],
+      "properties": {
+        "plan": {
+          "type": "string"
+        },
+        "metrics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "results_path": {
+          "type": "string"
+        }
+      }
+    },
+    "reproducibility": {
+      "type": "object",
+      "required": [
+        "command",
+        "seed"
+      ],
+      "properties": {
+        "command": {
+          "type": "string"
+        },
+        "seed": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "environment": {
+          "type": "string"
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "outcome",
+        "limitations",
+        "claim_audit"
+      ],
+      "properties": {
+        "outcome": {
+          "enum": [
+            "pending",
+            "supported",
+            "mixed",
+            "falsified",
+            "inconclusive",
+            "blocked"
+          ]
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claim_audit": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "next_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

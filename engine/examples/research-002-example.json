@@ -1,0 +1,55 @@
+{
+  "engine_version": "0.1",
+  "research": {
+    "id": "002",
+    "title": "Example falsifiable research",
+    "slug": "example-falsifiable-research",
+    "status": "designed"
+  },
+  "raw_idea": "A strange observation worth testing.",
+  "question": "Does the effect survive a stronger baseline?",
+  "initial_claim": "The effect is new and strong.",
+  "narrowed_claim": "The effect may persist under one specified stronger baseline.",
+  "hypothesis": "The measured effect remains above the declared threshold.",
+  "prior_art": [
+    {
+      "title": "Example prior work",
+      "status": "placeholder"
+    }
+  ],
+  "strongest_objections": [
+    "The baseline may explain the entire effect."
+  ],
+  "falsification": {
+    "criteria": [
+      "The effect disappears under the stronger baseline."
+    ]
+  },
+  "success_criteria": [
+    "The effect remains above the predeclared threshold."
+  ],
+  "experiment": {
+    "plan": "Compare the candidate mechanism against the stronger baseline.",
+    "metrics": [
+      "effect_size"
+    ],
+    "results_path": "results/RESULTS.md"
+  },
+  "reproducibility": {
+    "command": "python experiment/benchmark.py",
+    "seed": 405,
+    "environment": "Python"
+  },
+  "review": {
+    "outcome": "pending",
+    "limitations": [
+      "Example only."
+    ],
+    "claim_audit": [
+      "Do not claim production generalization."
+    ]
+  },
+  "next_questions": [
+    "What stronger falsification test comes next?"
+  ]
+}
