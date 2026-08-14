@@ -65,6 +65,34 @@ Raw results are stored in:
 
 ---
 
+## Figures
+
+### Figure 1 — Reconstruction Score by Defense Mode
+
+![Reconstruction Score by Defense Mode](figure-1-reconstruction-score.png)
+
+This figure compares the mean reconstruction score across the four experimental modes.
+
+Baseline and Rate Limit + Waiting produce the same final reconstruction score in this toy experiment.
+
+Hard Coverage reduces reconstruction most strongly, while Adaptive Disclosure produces an intermediate result.
+
+---
+
+### Figure 2 — Security–Utility Trade-off
+
+![Security–Utility Trade-off](figure-2-security-utility-tradeoff.png)
+
+This figure compares observable state against reconstruction score.
+
+Baseline and Rate Limit + Waiting overlap because both eventually expose the same final state under the assumptions of this experiment.
+
+Hard Coverage reduces both observability and reconstruction.
+
+Adaptive Disclosure occupies an intermediate position, preserving more observable state while reducing reconstruction relative to baseline.
+
+---
+
 ## 4. Baseline
 
 The baseline observer received all permitted responses without cumulative exposure controls.

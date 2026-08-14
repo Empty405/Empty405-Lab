@@ -306,6 +306,14 @@ Full interpretation:
 
 ---
 
+### Figures
+
+![Reconstruction Score by Defense Mode](results/figure-1-reconstruction-score.png)
+
+![Security–Utility Trade-off](results/figure-2-security-utility-tradeoff.png)
+
+---
+
 ## Preliminary Interpretation
 
 In this synthetic environment:
