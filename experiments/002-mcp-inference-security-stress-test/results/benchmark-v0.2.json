@@ -1,0 +1,27 @@
+{
+  "experiment": "MCP Inference Security v0.2 stress test",
+  "runs": 1000,
+  "random_seed": 40502,
+  "state": {"locations": 12, "resources": 8, "time_steps": 3, "cells_per_run": 288},
+  "identity_scenarios": {
+    "1": {
+      "baseline": {"information_exposure_percent":{"mean":91.427,"sd":0.168,"ci95_half_width":0.01},"mean_absolute_error":{"mean":2.211,"sd":0.092,"ci95_half_width":0.006},"reconstruction_within_5_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0},"legitimate_task_utility_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0},"observable_state_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0}},
+      "rate_limit_with_waiting": {"information_exposure_percent":{"mean":91.427,"sd":0.168,"ci95_half_width":0.01},"mean_absolute_error":{"mean":2.211,"sd":0.092,"ci95_half_width":0.006},"reconstruction_within_5_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0},"legitimate_task_utility_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0},"observable_state_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0}},
+      "hard_coverage_per_identity": {"information_exposure_percent":{"mean":27.303,"sd":0.083,"ci95_half_width":0.005},"mean_absolute_error":{"mean":18.745,"sd":1.094,"ci95_half_width":0.068},"reconstruction_within_5_percent":{"mean":37.53,"sd":1.787,"ci95_half_width":0.111},"legitimate_task_utility_percent":{"mean":29.861,"sd":0.0,"ci95_half_width":0.0},"observable_state_percent":{"mean":29.861,"sd":0.0,"ci95_half_width":0.0}},
+      "hard_coverage_shared_principal": {"information_exposure_percent":{"mean":27.303,"sd":0.083,"ci95_half_width":0.005},"mean_absolute_error":{"mean":18.745,"sd":1.094,"ci95_half_width":0.068},"reconstruction_within_5_percent":{"mean":37.53,"sd":1.787,"ci95_half_width":0.111},"legitimate_task_utility_percent":{"mean":29.861,"sd":0.0,"ci95_half_width":0.0},"observable_state_percent":{"mean":29.861,"sd":0.0,"ci95_half_width":0.0}},
+      "adaptive_disclosure_shared_principal": {"information_exposure_percent":{"mean":72.33,"sd":0.086,"ci95_half_width":0.005},"mean_absolute_error":{"mean":7.499,"sd":0.341,"ci95_half_width":0.021},"reconstruction_within_5_percent":{"mean":52.124,"sd":2.293,"ci95_half_width":0.142},"legitimate_task_utility_percent":{"mean":81.927,"sd":0.0,"ci95_half_width":0.0},"observable_state_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0}}
+    },
+    "4": {
+      "baseline": {"information_exposure_percent":{"mean":91.427,"sd":0.168,"ci95_half_width":0.01},"mean_absolute_error":{"mean":2.211,"sd":0.092,"ci95_half_width":0.006},"reconstruction_within_5_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0},"legitimate_task_utility_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0},"observable_state_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0}},
+      "rate_limit_with_waiting": {"information_exposure_percent":{"mean":91.427,"sd":0.168,"ci95_half_width":0.01},"mean_absolute_error":{"mean":2.211,"sd":0.092,"ci95_half_width":0.006},"reconstruction_within_5_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0},"legitimate_task_utility_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0},"observable_state_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0}},
+      "hard_coverage_per_identity": {"information_exposure_percent":{"mean":91.427,"sd":0.168,"ci95_half_width":0.01},"mean_absolute_error":{"mean":2.211,"sd":0.092,"ci95_half_width":0.006},"reconstruction_within_5_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0},"legitimate_task_utility_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0},"observable_state_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0}},
+      "hard_coverage_shared_principal": {"information_exposure_percent":{"mean":27.303,"sd":0.083,"ci95_half_width":0.005},"mean_absolute_error":{"mean":18.745,"sd":1.094,"ci95_half_width":0.068},"reconstruction_within_5_percent":{"mean":37.53,"sd":1.787,"ci95_half_width":0.111},"legitimate_task_utility_percent":{"mean":29.861,"sd":0.0,"ci95_half_width":0.0},"observable_state_percent":{"mean":29.861,"sd":0.0,"ci95_half_width":0.0}},
+      "adaptive_disclosure_shared_principal": {"information_exposure_percent":{"mean":72.33,"sd":0.086,"ci95_half_width":0.005},"mean_absolute_error":{"mean":7.499,"sd":0.341,"ci95_half_width":0.021},"reconstruction_within_5_percent":{"mean":52.124,"sd":2.293,"ci95_half_width":0.142},"legitimate_task_utility_percent":{"mean":81.927,"sd":0.0,"ci95_half_width":0.0},"observable_state_percent":{"mean":100.0,"sd":0.0,"ci95_half_width":0.0}}
+    }
+  },
+  "metric_notes": {
+    "information_exposure_percent": "Project-specific interval-narrowing metric. 0 means the full 0-100 domain remains feasible; higher values mean released projections narrow the feasible interval.",
+    "legitimate_task_utility_percent": "Project-specific weighted proxy: availability 50%, band 30%, trend 20%.",
+    "reconstruction_within_5_percent": "Percentage of hidden cells whose reconstructed midpoint is within ±5 units."
+  }
+}
