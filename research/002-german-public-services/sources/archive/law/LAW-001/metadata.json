@@ -1,0 +1,11 @@
+{
+  "source_id": "LAW-001",
+  "requested_url": "https://www.gesetze-im-internet.de/sgb_10/__25.html",
+  "final_url": "https://www.gesetze-im-internet.de/sgb_10/__25.html",
+  "fetched_at_utc": "2026-08-14T10:31:22.371950+00:00",
+  "http_status": 200,
+  "content_type": "text/html",
+  "sha256": "21ac4aa72c2da723c939e3f041c519d920c5c9879a71154dbb0e7117eb8e9792",
+  "bytes": 5981,
+  "local_path": "sources/archive/law/LAW-001/source.html"
+}

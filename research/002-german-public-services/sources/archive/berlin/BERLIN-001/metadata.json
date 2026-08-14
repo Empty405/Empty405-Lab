@@ -1,0 +1,11 @@
+{
+  "source_id": "BERLIN-001",
+  "requested_url": "https://www.berlin.de/jobcenter-friedrichshain-kreuzberg/service/online-angebote/artikel.1601814.php",
+  "final_url": "https://www.berlin.de/jobcenter-friedrichshain-kreuzberg/service/online-angebote/artikel.1601814.php",
+  "fetched_at_utc": "2026-08-14T10:37:06.187550+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "27dff65ccab324ec4bb091e19805c2bfecce14cde914300afb996337faa267be",
+  "bytes": 51397,
+  "local_path": "sources/archive/berlin/BERLIN-001/source.html"
+}

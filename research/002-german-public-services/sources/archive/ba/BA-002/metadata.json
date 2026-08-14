@@ -1,0 +1,11 @@
+{
+  "source_id": "BA-002",
+  "requested_url": "https://www.arbeitsagentur.de/grundsicherung/online-services-im-ueberblick",
+  "final_url": "https://www.arbeitsagentur.de/grundsicherung/online-services-im-ueberblick",
+  "fetched_at_utc": "2026-08-14T10:35:45.721032+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "aaf05037e0a436c4ebf9cb943cf14bd3c21304ddf1ec2f8c392b0d24881a1d78",
+  "bytes": 121941,
+  "local_path": "sources/archive/ba/BA-002/source.html"
+}

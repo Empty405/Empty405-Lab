@@ -1,0 +1,11 @@
+{
+  "source_id": "BA-001",
+  "requested_url": "https://www.arbeitsagentur.de/service-bereich/postfachservice",
+  "final_url": "https://www.arbeitsagentur.de/service-bereich/postfachservice",
+  "fetched_at_utc": "2026-08-14T10:35:45.311383+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "022108f78e75ce88e044963f5780b0ce1a9e9b2c5d8abb19598c548d0cbe0663",
+  "bytes": 60221,
+  "local_path": "sources/archive/ba/BA-001/source.html"
+}

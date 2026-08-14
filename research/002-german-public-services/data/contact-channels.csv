@@ -1,0 +1,4 @@
+institution_id,institution,primary_channel,secondary_channel,phone,fax,postal,status
+JC-FK,Jobcenter Berlin Friedrichshain-Kreuzberg,jobcenter.digital,official contact page,+49 30 555544-7010,+49 30 555544-1003,"Landsberger Allee 50/52, 10249 Berlin",VERIFIED
+JC-MITTE,Jobcenter Berlin Mitte,jobcenter.digital,Jobcenter-App,+49 30 555545-2222,+49 30 555545-6602,"Jobcenter Berlin Mitte, 10086 Berlin",VERIFIED
+JC-TK,Jobcenter Berlin Treptow-Köpenick,jobcenter.digital,official contact page,+49 30 555575-2222,+49 30 555575-6669,"Postfach 961111, 12474 Berlin",VERIFIED

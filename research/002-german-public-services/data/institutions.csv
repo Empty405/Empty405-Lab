@@ -1,0 +1,6 @@
+institution_id,name,level,district,role,official_source,req001,req002,status
+BA-CENTRAL,Bundesagentur für Arbeit,Federal,,Central digital services,https://www.arbeitsagentur.de/,YES,PARTIAL,PLANNED
+BA-DPO,Datenschutzbeauftragter der Bundesagentur für Arbeit,Federal,,Data protection,https://www.arbeitsagentur.de/ueber-uns/datenschutzbeauftragter,YES,PARTIAL,PLANNED
+JC-FK,Jobcenter Berlin Friedrichshain-Kreuzberg,Local,Friedrichshain-Kreuzberg,Jobcenter,https://www.berlin.de/jobcenter-friedrichshain-kreuzberg/,YES,YES,PLANNED
+JC-MITTE,Jobcenter Berlin Mitte,Local,Mitte,Jobcenter,https://www.berlin.de/jobcenter-mitte/,YES,YES,PLANNED
+JC-TK,Jobcenter Berlin Treptow-Köpenick,Local,Treptow-Köpenick,Jobcenter,https://www.berlin.de/jobcenter-treptow-koepenick/,YES,YES,PLANNED

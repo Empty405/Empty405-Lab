@@ -1,0 +1,11 @@
+{
+  "source_id": "BERLIN-002",
+  "requested_url": "https://www.berlin.de/jobcenter-mitte/",
+  "final_url": "https://www.berlin.de/jobcenter-mitte/",
+  "fetched_at_utc": "2026-08-14T10:35:47.552615+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "f3a41731d2db2e5aa83b27d036f3cb2c9493eef950e0bacd14264ddbacd0c47e",
+  "bytes": 38616,
+  "local_path": "sources/archive/berlin/BERLIN-002/source.html"
+}

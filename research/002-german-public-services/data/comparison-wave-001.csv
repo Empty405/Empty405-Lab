@@ -1,0 +1,4 @@
+test_id,institution_id,request_template,channel,sent_at_utc,ack_at_utc,first_human_at_utc,first_substantive_at_utc,resolved_at_utc,status
+CMP-001,JC-FK,REQ-003,,,,,,,NOT_SENT
+CMP-002,JC-MITTE,REQ-003,,,,,,,NOT_SENT
+CMP-003,JC-TK,REQ-003,,,,,,,NOT_SENT

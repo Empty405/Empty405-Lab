@@ -1,0 +1,11 @@
+{
+  "source_id": "LAW-003",
+  "requested_url": "https://www.gesetze-im-internet.de/sgb_10/__84.html",
+  "final_url": "https://www.gesetze-im-internet.de/sgb_10/__84.html",
+  "fetched_at_utc": "2026-08-14T10:35:44.962128+00:00",
+  "http_status": 200,
+  "content_type": "text/html",
+  "sha256": "0e5bad50285bd1fe7c0b80f44e469fbd389fca8d0baf43608b36d7dbbfe361db",
+  "bytes": 6394,
+  "local_path": "sources/archive/law/LAW-003/source.html"
+}

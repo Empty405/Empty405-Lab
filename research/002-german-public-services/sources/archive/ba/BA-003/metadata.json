@@ -1,0 +1,11 @@
+{
+  "source_id": "BA-003",
+  "requested_url": "https://www.arbeitsagentur.de/datenschutzerklaerung",
+  "final_url": "https://www.arbeitsagentur.de/datenschutzerklaerung",
+  "fetched_at_utc": "2026-08-14T10:35:46.181353+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "6cbc4ad64819759cd513b100e8cd16b650595b9d27d6fab8875617058c02c4d0",
+  "bytes": 371021,
+  "local_path": "sources/archive/ba/BA-003/source.html"
+}
