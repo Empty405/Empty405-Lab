@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="590" viewBox="0 0 940 590">
+<rect width="100%" height="100%" fill="#08131f"/>
+<style>text{font-family:system-ui,sans-serif;fill:#dbeafe}.g{stroke:#294052}.a{stroke:#94a3b8;stroke-width:1.5}</style>
+<text x="80" y="30" font-size="20" font-weight="700">B3: post-hoc coalition reconstruction</text>
+<text x="80" y="50" font-size="12">partitioned queries · low overlap · budget 0.25 · fixed 96 total requests</text>
+<line class="g" x1="80" y1="470" x2="880" y2="470"/>
+<text x="70" y="474" text-anchor="end" font-size="11">0.00</text>
+<line class="g" x1="80" y1="367.5" x2="880" y2="367.5"/>
+<text x="70" y="371.5" text-anchor="end" font-size="11">0.25</text>
+<line class="g" x1="80" y1="265.0" x2="880" y2="265.0"/>
+<text x="70" y="269.0" text-anchor="end" font-size="11">0.50</text>
+<line class="g" x1="80" y1="162.5" x2="880" y2="162.5"/>
+<text x="70" y="166.5" text-anchor="end" font-size="11">0.75</text>
+<line class="g" x1="80" y1="60" x2="880" y2="60"/>
+<text x="70" y="64" text-anchor="end" font-size="11">1.00</text>
+<line class="g" x1="80.0" y1="60" x2="80.0" y2="470"/>
+<text x="80.0" y="492" text-anchor="middle" font-size="11">1</text>
+<line class="g" x1="240.0" y1="60" x2="240.0" y2="470"/>
+<text x="240.0" y="492" text-anchor="middle" font-size="11">2</text>
+<line class="g" x1="400.0" y1="60" x2="400.0" y2="470"/>
+<text x="400.0" y="492" text-anchor="middle" font-size="11">4</text>
+<line class="g" x1="560.0" y1="60" x2="560.0" y2="470"/>
+<text x="560.0" y="492" text-anchor="middle" font-size="11">8</text>
+<line class="g" x1="720.0" y1="60" x2="720.0" y2="470"/>
+<text x="720.0" y="492" text-anchor="middle" font-size="11">16</text>
+<line class="g" x1="880.0" y1="60" x2="880.0" y2="470"/>
+<text x="880.0" y="492" text-anchor="middle" font-size="11">32</text>
+<line class="a" x1="80" y1="470" x2="880" y2="470"/>
+<line x1="80" y1="367.5" x2="880" y2="367.5" stroke="#fff" stroke-dasharray="6 5"/>
+<polyline points="80.0,367.5 240.0,265.0 400.0,76.4 560.0,76.4 720.0,76.4 880.0,76.4" fill="none" stroke="#ef4444" stroke-width="3"/>
+<circle cx="80.0" cy="367.5" r="3.5" fill="#ef4444"/>
+<circle cx="240.0" cy="265.0" r="3.5" fill="#ef4444"/>
+<circle cx="400.0" cy="76.4" r="3.5" fill="#ef4444"/>
+<circle cx="560.0" cy="76.4" r="3.5" fill="#ef4444"/>
+<circle cx="720.0" cy="76.4" r="3.5" fill="#ef4444"/>
+<circle cx="880.0" cy="76.4" r="3.5" fill="#ef4444"/>
+<line x1="80" y1="510" x2="108" y2="510" stroke="#ef4444" stroke-width="4"/>
+<text x="116" y="514" font-size="12">per_client</text>
+<polyline points="80.0,367.5 240.0,367.5 400.0,367.5 560.0,265.0 720.0,76.4 880.0,76.4" fill="none" stroke="#f59e0b" stroke-width="3"/>
+<circle cx="80.0" cy="367.5" r="3.5" fill="#f59e0b"/>
+<circle cx="240.0" cy="367.5" r="3.5" fill="#f59e0b"/>
+<circle cx="400.0" cy="367.5" r="3.5" fill="#f59e0b"/>
+<circle cx="560.0" cy="265.0" r="3.5" fill="#f59e0b"/>
+<circle cx="720.0" cy="76.4" r="3.5" fill="#f59e0b"/>
+<circle cx="880.0" cy="76.4" r="3.5" fill="#f59e0b"/>
+<line x1="80" y1="535" x2="108" y2="535" stroke="#f59e0b" stroke-width="4"/>
+<text x="116" y="539" font-size="12">organization</text>
+<polyline points="80.0,367.5 240.0,282.4 400.0,116.6 560.0,94.8 720.0,81.8 880.0,77.9" fill="none" stroke="#3b82f6" stroke-width="3"/>
+<circle cx="80.0" cy="367.5" r="3.5" fill="#3b82f6"/>
+<circle cx="240.0" cy="282.4" r="3.5" fill="#3b82f6"/>
+<circle cx="400.0" cy="116.6" r="3.5" fill="#3b82f6"/>
+<circle cx="560.0" cy="94.8" r="3.5" fill="#3b82f6"/>
+<circle cx="720.0" cy="81.8" r="3.5" fill="#3b82f6"/>
+<circle cx="880.0" cy="77.9" r="3.5" fill="#3b82f6"/>
+<line x1="365" y1="510" x2="393" y2="510" stroke="#3b82f6" stroke-width="4"/>
+<text x="401" y="514" font-size="12">behavioral_cohort</text>
+<polyline points="80.0,367.5 240.0,314.2 400.0,314.2 560.0,314.2 720.0,314.2 880.0,314.2" fill="none" stroke="#22c55e" stroke-width="3"/>
+<circle cx="80.0" cy="367.5" r="3.5" fill="#22c55e"/>
+<circle cx="240.0" cy="314.2" r="3.5" fill="#22c55e"/>
+<circle cx="400.0" cy="314.2" r="3.5" fill="#22c55e"/>
+<circle cx="560.0" cy="314.2" r="3.5" fill="#22c55e"/>
+<circle cx="720.0" cy="314.2" r="3.5" fill="#22c55e"/>
+<circle cx="880.0" cy="314.2" r="3.5" fill="#22c55e"/>
+<line x1="365" y1="535" x2="393" y2="535" stroke="#22c55e" stroke-width="4"/>
+<text x="401" y="539" font-size="12">diversity_aware</text>
+<polyline points="80.0,367.5 240.0,367.5 400.0,367.5 560.0,367.5 720.0,367.5 880.0,367.5" fill="none" stroke="#64748b" stroke-width="3"/>
+<circle cx="80.0" cy="367.5" r="3.5" fill="#64748b"/>
+<circle cx="240.0" cy="367.5" r="3.5" fill="#64748b"/>
+<circle cx="400.0" cy="367.5" r="3.5" fill="#64748b"/>
+<circle cx="560.0" cy="367.5" r="3.5" fill="#64748b"/>
+<circle cx="720.0" cy="367.5" r="3.5" fill="#64748b"/>
+<circle cx="880.0" cy="367.5" r="3.5" fill="#64748b"/>
+<line x1="650" y1="510" x2="678" y2="510" stroke="#64748b" stroke-width="4"/>
+<text x="686" y="514" font-size="12">global</text>
+<polyline points="80.0,367.5 240.0,367.5 400.0,367.5 560.0,367.5 720.0,367.5 880.0,367.5" fill="none" stroke="#a78bfa" stroke-width="3"/>
+<circle cx="80.0" cy="367.5" r="3.5" fill="#a78bfa"/>
+<circle cx="240.0" cy="367.5" r="3.5" fill="#a78bfa"/>
+<circle cx="400.0" cy="367.5" r="3.5" fill="#a78bfa"/>
+<circle cx="560.0" cy="367.5" r="3.5" fill="#a78bfa"/>
+<circle cx="720.0" cy="367.5" r="3.5" fill="#a78bfa"/>
+<circle cx="880.0" cy="367.5" r="3.5" fill="#a78bfa"/>
+<line x1="650" y1="535" x2="678" y2="535" stroke="#a78bfa" stroke-width="4"/>
+<text x="686" y="539" font-size="12">oracle</text>
+<text x="480" y="580" text-anchor="middle" font-size="12">coalition size (log2 spacing)</text>
+<text x="18" y="270" text-anchor="middle" font-size="12" transform="rotate(-90 18 270)">coalition reconstruction</text>
+</svg>
