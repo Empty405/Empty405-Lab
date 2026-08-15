@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="100%" height="100%" fill="#08131f"/>
+<style>text{font-family:system-ui,sans-serif;fill:#dbeafe}.grid{stroke:#294052;stroke-width:1}.axis{stroke:#94a3b8;stroke-width:1.5}</style>
+<text x="80" y="30" font-size="20" font-weight="700">B1: exposure after identity rotation</text>
+<text x="80" y="50" font-size="12" fill="#94a3b8">budget=0.25, noisy signals, mean of 1,000 trials</text>
+<line class="grid" x1="80" y1="455" x2="840" y2="455"/>
+<text x="68" y="459" text-anchor="end" font-size="11">0.00</text>
+<line class="grid" x1="80" y1="355.0" x2="840" y2="355.0"/>
+<text x="68" y="359.0" text-anchor="end" font-size="11">0.25</text>
+<line class="grid" x1="80" y1="255.0" x2="840" y2="255.0"/>
+<text x="68" y="259.0" text-anchor="end" font-size="11">0.50</text>
+<line class="grid" x1="80" y1="155.0" x2="840" y2="155.0"/>
+<text x="68" y="159.0" text-anchor="end" font-size="11">0.75</text>
+<line class="grid" x1="80" y1="55" x2="840" y2="55"/>
+<text x="68" y="59" text-anchor="end" font-size="11">1.00</text>
+<line class="grid" x1="80.0" y1="55" x2="80.0" y2="455"/>
+<text x="80.0" y="477" text-anchor="middle" font-size="11">0</text>
+<line class="grid" x1="127.5" y1="55" x2="127.5" y2="455"/>
+<text x="127.5" y="477" text-anchor="middle" font-size="11">1</text>
+<line class="grid" x1="175.0" y1="55" x2="175.0" y2="455"/>
+<text x="175.0" y="477" text-anchor="middle" font-size="11">2</text>
+<line class="grid" x1="270.0" y1="55" x2="270.0" y2="455"/>
+<text x="270.0" y="477" text-anchor="middle" font-size="11">4</text>
+<line class="grid" x1="460.0" y1="55" x2="460.0" y2="455"/>
+<text x="460.0" y="477" text-anchor="middle" font-size="11">8</text>
+<line class="grid" x1="840.0" y1="55" x2="840.0" y2="455"/>
+<text x="840.0" y="477" text-anchor="middle" font-size="11">16</text>
+<line class="axis" x1="80" y1="455" x2="840" y2="455"/>
+<line class="axis" x1="80" y1="55" x2="80" y2="455"/>
+<line x1="80" y1="355.0" x2="840" y2="355.0" stroke="#f8fafc" stroke-dasharray="6 5"/>
+<polyline points="80.0,355.0 127.5,255.0 175.0,155.0 270.0,55.0 460.0,55.0 840.0,55.0" fill="none" stroke="#ef4444" stroke-width="3"/>
+<circle cx="80.0" cy="355.0" r="3.5" fill="#ef4444"/>
+<circle cx="127.5" cy="255.0" r="3.5" fill="#ef4444"/>
+<circle cx="175.0" cy="155.0" r="3.5" fill="#ef4444"/>
+<circle cx="270.0" cy="55.0" r="3.5" fill="#ef4444"/>
+<circle cx="460.0" cy="55.0" r="3.5" fill="#ef4444"/>
+<circle cx="840.0" cy="55.0" r="3.5" fill="#ef4444"/>
+<line x1="80" y1="490" x2="108" y2="490" stroke="#ef4444" stroke-width="4"/>
+<text x="116" y="494" font-size="12">per_identity</text>
+<polyline points="80.0,355.0 127.5,339.0 175.0,325.2 270.0,308.8 460.0,301.5 840.0,298.5" fill="none" stroke="#22c55e" stroke-width="3"/>
+<circle cx="80.0" cy="355.0" r="3.5" fill="#22c55e"/>
+<circle cx="127.5" cy="339.0" r="3.5" fill="#22c55e"/>
+<circle cx="175.0" cy="325.2" r="3.5" fill="#22c55e"/>
+<circle cx="270.0" cy="308.8" r="3.5" fill="#22c55e"/>
+<circle cx="460.0" cy="301.5" r="3.5" fill="#22c55e"/>
+<circle cx="840.0" cy="298.5" r="3.5" fill="#22c55e"/>
+<line x1="80" y1="515" x2="108" y2="515" stroke="#22c55e" stroke-width="4"/>
+<text x="116" y="519" font-size="12">durable_credential</text>
+<polyline points="80.0,355.0 127.5,326.7 175.0,297.4 270.0,263.7 460.0,254.5 840.0,247.5" fill="none" stroke="#f59e0b" stroke-width="3"/>
+<circle cx="80.0" cy="355.0" r="3.5" fill="#f59e0b"/>
+<circle cx="127.5" cy="326.7" r="3.5" fill="#f59e0b"/>
+<circle cx="175.0" cy="297.4" r="3.5" fill="#f59e0b"/>
+<circle cx="270.0" cy="263.7" r="3.5" fill="#f59e0b"/>
+<circle cx="460.0" cy="254.5" r="3.5" fill="#f59e0b"/>
+<circle cx="840.0" cy="247.5" r="3.5" fill="#f59e0b"/>
+<line x1="350" y1="490" x2="378" y2="490" stroke="#f59e0b" stroke-width="4"/>
+<text x="386" y="494" font-size="12">deterministic</text>
+<polyline points="80.0,355.0 127.5,340.0 175.0,323.3 270.0,306.6 460.0,297.8 840.0,294.5" fill="none" stroke="#3b82f6" stroke-width="3"/>
+<circle cx="80.0" cy="355.0" r="3.5" fill="#3b82f6"/>
+<circle cx="127.5" cy="340.0" r="3.5" fill="#3b82f6"/>
+<circle cx="175.0" cy="323.3" r="3.5" fill="#3b82f6"/>
+<circle cx="270.0" cy="306.6" r="3.5" fill="#3b82f6"/>
+<circle cx="460.0" cy="297.8" r="3.5" fill="#3b82f6"/>
+<circle cx="840.0" cy="294.5" r="3.5" fill="#3b82f6"/>
+<line x1="350" y1="515" x2="378" y2="515" stroke="#3b82f6" stroke-width="4"/>
+<text x="386" y="519" font-size="12">probabilistic</text>
+<polyline points="80.0,355.0 127.5,355.0 175.0,355.0 270.0,355.0 460.0,355.0 840.0,355.0" fill="none" stroke="#a78bfa" stroke-width="3"/>
+<circle cx="80.0" cy="355.0" r="3.5" fill="#a78bfa"/>
+<circle cx="127.5" cy="355.0" r="3.5" fill="#a78bfa"/>
+<circle cx="175.0" cy="355.0" r="3.5" fill="#a78bfa"/>
+<circle cx="270.0" cy="355.0" r="3.5" fill="#a78bfa"/>
+<circle cx="460.0" cy="355.0" r="3.5" fill="#a78bfa"/>
+<circle cx="840.0" cy="355.0" r="3.5" fill="#a78bfa"/>
+<line x1="620" y1="490" x2="648" y2="490" stroke="#a78bfa" stroke-width="4"/>
+<text x="656" y="494" font-size="12">oracle</text>
+<text x="460" y="545" text-anchor="middle" font-size="12">rotation count</text>
+<text x="18" y="255" text-anchor="middle" font-size="12" transform="rotate(-90 18 255)">principal exposure</text>
+</svg>
