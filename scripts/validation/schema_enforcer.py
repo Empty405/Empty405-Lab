@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Validate Empty405-Lab benchmark metadata without third-party dependencies."""
+
 from __future__ import annotations
 
 import argparse
@@ -94,9 +95,7 @@ def main() -> int:
         )
         count = declared_rows(metadata, required=False)
         detail = (
-            f"{count:,} declared rows"
-            if count is not None
-            else "legacy metadata; row count verified from artifacts"
+            f"{count:,} declared rows" if count is not None else "legacy metadata; row count verified from artifacts"
         )
         print(f"PASS {path}: {detail}")
     return 0

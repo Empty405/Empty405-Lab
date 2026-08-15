@@ -1,1 +1,5 @@
-__pycache__/\n*.py[cod]\n.cache/\n
+__pycache__/
+*.py[cod]
+.cache/
+.venv/
+.ruff_cache/

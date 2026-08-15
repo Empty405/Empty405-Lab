@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Checkpointed validator/runner for completed Empty405-Lab experiments."""
+
 from __future__ import annotations
 
 import argparse
@@ -34,7 +35,11 @@ def discover(root: Path) -> list[Module]:
 
 def fingerprint(module: Module) -> str:
     digest = hashlib.sha256()
-    paths = [module.path / "benchmark.py", module.path / "test_benchmark.py", module.path / "results" / "benchmark.json"]
+    paths = [
+        module.path / "benchmark.py",
+        module.path / "test_benchmark.py",
+        module.path / "results" / "benchmark.json",
+    ]
     paths += sorted((module.path / "results").glob("*.csv.gz"))
     for path in paths:
         digest.update(path.relative_to(module.path).as_posix().encode())
@@ -72,7 +77,9 @@ def main() -> int:
     parser.add_argument("--state", type=Path, default=Path(".cache/research-runner/state.json"))
     parser.add_argument("--resume", action="store_true", help="skip unchanged modules that previously passed")
     parser.add_argument("--dry-run", action="store_true", help="show the queue without executing")
-    parser.add_argument("--run-benchmarks", action="store_true", help="regenerate full benchmark artifacts before validation")
+    parser.add_argument(
+        "--run-benchmarks", action="store_true", help="regenerate full benchmark artifacts before validation"
+    )
     parser.add_argument("--max-modules", type=int, default=0, help="0 means process every discovered module")
     parser.add_argument("--ci", action="store_true", help="disable persistent resume state")
     args = parser.parse_args()
