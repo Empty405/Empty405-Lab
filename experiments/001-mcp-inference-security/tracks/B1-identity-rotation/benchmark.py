@@ -114,6 +114,8 @@ def mean_ci(values: list[float]) -> tuple[float, float, float]:
 
 def run(trials: int, output_dir: Path) -> dict[str, object]:
     output_dir.mkdir(parents=True, exist_ok=True)
+    for stale in output_dir.glob("*.csv.gz"):
+        stale.unlink()
     raw_path = output_dir / "trials.csv.gz"
     grouped: dict[tuple, dict[str, list[float]]] = defaultdict(lambda: defaultdict(list))
     rows = 0
