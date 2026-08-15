@@ -16,7 +16,10 @@ class RunnerTests(unittest.TestCase):
         (module / "test_benchmark.py").write_text("import unittest\n")
         (module / "results" / "benchmark.json").write_text(json.dumps({"trial_rows": declared}))
         with gzip.open(module / "results" / "trials.csv.gz", "wt", newline="") as handle:
-            writer = csv.writer(handle); writer.writerow(["x"]); writer.writerow([1]); writer.writerow([2])
+            writer = csv.writer(handle)
+            writer.writerow(["x"])
+            writer.writerow([1])
+            writer.writerow([2])
         return module
 
     def test_discovers_complete_module(self):
@@ -39,7 +42,8 @@ class RunnerTests(unittest.TestCase):
 
     def test_fingerprint_changes_with_metadata(self):
         with tempfile.TemporaryDirectory() as tmp:
-            module = self.fixture(Path(tmp)); item = research_runner.Module(module.name, module)
+            module = self.fixture(Path(tmp))
+            item = research_runner.Module(module.name, module)
             before = research_runner.fingerprint(item)
             (module / "results" / "benchmark.json").write_text(json.dumps({"trial_rows": 2, "changed": True}))
             self.assertNotEqual(before, research_runner.fingerprint(item))
