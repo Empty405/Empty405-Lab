@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Build a compact, validated index of completed experiment artifacts."""
+
 from __future__ import annotations
 
 import argparse
