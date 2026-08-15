@@ -1,35 +1,61 @@
-# B4 — Cross-session accumulation
+# B4 — Cross-session Accumulation
 
-**Program:** `001-mcp-inference-security`  
-**Track:** B  
-**Module:** B4  
-**Status:** Scaffold / not yet researched
+**Program:** Research 001 — MCP Inference Security  
+**Track:** B — Identity / Principal Problem  
+**Status:** Designed  
+**Depends on:** A1, A2, B1, E1  
+**Feeds into:** B5, B6, C6, E3, E4, E5
 
 ## Простими словами
 
-Перевіряє накопичення знань між різними сесіями одного принципала.
+Навіть без зміни identity клієнт може завершити одну сесію, повернутися завтра й отримати новий «чистий» бюджет. Сервер пам'ятає лише поточну сесію, а observer пам'ятає всі старі відповіді та поступово складає їх разом.
 
-## Початкове дослідницьке питання
+B4 досліджує не підміну identity, як B1, а межі пам'яті exposure ledger: скільки історії зберігати, коли її послаблювати та якою є ціна довгої пам'яті для легітимних повторних задач.
 
-> За яких умов цей механізм або проблема реально змінює безпеку, реконструкцію інформації, корисність чи вартість системи?
+## Research question
 
-## Межі модуля
+> How do session resets, retention windows, and exposure decay affect long-horizon reconstruction when the same durable principal accumulates disclosures across multiple sessions?
 
-Цей файл поки є карткою-навігатором, а не готовим науковим висновком. Перед експериментом тут потрібно окремо записати припущення, те, що модуль не досліджує, залежності від інших треків і критерії зупинки.
+## Narrow hypothesis
 
-## Майбутня структура дослідження
+Session-scoped accounting дозволить cumulative reconstruction рости після кожного reset до насичення hidden state. Persistent principal accounting стримає це, а TTL/decay створять проміжний режим: безпека залежатиме від session gap, decay rate та того, чи справді старі відомості втратили цінність.
 
-- `README.md` — питання, гіпотеза, межі та поточний статус;
-- `architecture.md` — компоненти, потоки даних і trust boundaries;
-- `related-work.md` — попередні роботи та джерела;
-- `experiment-design.md` — змінні, контролі, сценарії та процедура;
-- `metrics.md` — формули, одиниці й інваріанти;
-- `falsification.md` — результат, який послабить або спростує гіпотезу;
-- `results/` — сирі результати, таблиці й графіки після запуску.
+## Null hypothesis
 
-## Наступний крок
+Після фіксації загальної кількості запитів розподіл між сесіями не змінює reconstruction; session reset, TTL, decay та persistent accounting дають еквівалентний результат або стара інформація природно стає некорисною.
 
-1. Пояснити проблему одним конкретним прикладом.
-2. Сформулювати вузьку гіпотезу й нульову гіпотезу.
-3. Визначити, що буде доказом проти нашої ідеї.
-4. Лише після цього проєктувати експеримент і писати код.
+## Unit of analysis
+
+- **durable principal:** той самий ground-truth actor у різних sessions;
+- **session:** обмежений часовий інтервал взаємодії;
+- **ledger memory:** історична exposure state, яку policy враховує зараз;
+- **observer memory:** усі факти, які principal реально отримав раніше;
+- **session gap:** логічний час між завершенням і наступним входом.
+
+Policy не може змусити observer «забути» вже отриману відповідь.
+
+## Scope
+
+Included:
+
+- один стабільний principal;
+- 1–32 sessions;
+- статичний hidden state як primary fixture;
+- session reset, persistent, TTL, rolling-window і exponential-decay accounting;
+- fixed-total-request та fixed-per-session comparisons;
+- reconstruction, forgotten exposure, legitimate continuity, storage та latency.
+
+Excluded:
+
+- identity rotation — B1;
+- multiple identities — B2;
+- collusion — B3;
+- multiple servers — B5;
+- повністю dynamic hidden state — E2;
+- нормативний вибір retention period — B6/J1.
+
+## Decision rule
+
+B4 підтримує гіпотезу, якщо за matched total requests session-scoped або decayed ledger дозволяє observer memory перевищити поточний accounted exposure і principal budget, а ефект має dose-response із session count і gap.
+
+Будь-яка рекомендація retention повинна одночасно показувати security, legitimate continuity, storage cost і ризик надмірного довготривалого профілювання.
