@@ -1,35 +1,59 @@
-# A3 — Adaptive disclosure
+# A3 — Adaptive Disclosure
 
-**Program:** `001-mcp-inference-security`  
-**Track:** A  
-**Module:** A3  
-**Status:** Scaffold / not yet researched
+**Program:** Research 001 — MCP Inference Security  
+**Track:** A3  
+**Status:** Designed  
+**Depends on:** A1 and A2  
+**Distinct from:** H3 defense comparison
 
 ## Простими словами
 
-Досліджує поступове зниження точності відповіді зі зростанням накопиченого розкриття.
+Замість різкого «дозволено / заборонено» система може поступово робити відповіді менш точними. Спочатку клієнт бачить точне значення, потім діапазон, категорію, загальний підсумок і лише в кінці — відмову.
 
-## Початкове дослідницьке питання
+A3 перевіряє, чи така драбина справді зменшує реконструкцію та водночас залишає чесному клієнту корисну відповідь.
 
-> За яких умов цей механізм або проблема реально змінює безпеку, реконструкцію інформації, корисність чи вартість системи?
+## Research question
 
-## Межі модуля
+> Can a deterministic, provenance-carrying precision ladder reduce cumulative reconstruction while preserving more task utility than matched hard blocking?
 
-Цей файл поки є карткою-навігатором, а не готовим науковим висновком. Перед експериментом тут потрібно окремо записати припущення, те, що модуль не досліджує, залежності від інших треків і критерії зупинки.
+## Precision ladder
 
-## Майбутня структура дослідження
+```text
+L0 exact
+→ L1 narrow range
+→ L2 broad range
+→ L3 category
+→ L4 aggregate
+→ L5 unavailable
+```
 
-- `README.md` — питання, гіпотеза, межі та поточний статус;
-- `architecture.md` — компоненти, потоки даних і trust boundaries;
-- `related-work.md` — попередні роботи та джерела;
-- `experiment-design.md` — змінні, контролі, сценарії та процедура;
-- `metrics.md` — формули, одиниці й інваріанти;
-- `falsification.md` — результат, який послабить або спростує гіпотезу;
-- `results/` — сирі результати, таблиці й графіки після запуску.
+Перехід визначається накопиченим exposure принципала, типом задачі та чутливістю projection.
 
-## Наступний крок
+## Narrow hypothesis
 
-1. Пояснити проблему одним конкретним прикладом.
-2. Сформулювати вузьку гіпотезу й нульову гіпотезу.
-3. Визначити, що буде доказом проти нашої ідеї.
-4. Лише після цього проєктувати експеримент і писати код.
+At matched final exposure targets, deterministic precision degradation will preserve more legitimate task utility than hard blocking, without allowing repeated sampling to reconstruct a more precise answer than the selected disclosure level intends.
+
+## Null hypothesis
+
+Adaptive disclosure provides no utility advantage over hard blocking at comparable reconstruction risk, or repeated degraded answers can be composed into effectively exact information.
+
+## Required properties
+
+- deterministic for the same principal, epoch, query class, and policy state;
+- monotonic: increasing exposure cannot silently restore precision;
+- compositional: repeated outputs cannot exceed the intended level;
+- provenance-carrying: downstream agents know precision and freshness;
+- policy-visible: every transformation has an explicit reason code;
+- fail-closed for unknown sensitivity mappings.
+
+## Explicit exclusions
+
+A3 does not solve principal identity, collusion, distributed synchronization, arbitrary semantic equivalence, differential privacy, or deceptive false-data injection.
+
+## Relationship to H3
+
+A3 designs and falsifies one adaptive-disclosure primitive. H3 later compares variants of this defense against rate limits, hard coverage, noise, auditing, and hybrid policies.
+
+## Decision rule
+
+The mechanism remains viable only if it beats matched hard blocking on legitimate task utility, stays below the reconstruction boundary, and passes repeated-sampling, boundary-oscillation, and provenance tests.

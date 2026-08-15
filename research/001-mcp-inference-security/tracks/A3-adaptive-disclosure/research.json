@@ -1,0 +1,76 @@
+{
+  "engine_version": "0.1",
+  "research": {
+    "id": "001",
+    "track": "A3",
+    "title": "Adaptive Disclosure",
+    "slug": "adaptive-disclosure",
+    "status": "designed"
+  },
+  "question": "Can a deterministic provenance-carrying precision ladder preserve more legitimate utility than matched hard blocking without increasing reconstruction risk?",
+  "raw_idea": "Reduce response precision progressively as cumulative exposure grows instead of switching directly from exact access to denial.",
+  "initial_claim": "Adaptive disclosure can preserve utility while limiting cumulative inference.",
+  "narrowed_claim": "At matched reconstruction risk, deterministic nested precision levels may preserve more task utility than hard blocking and resist repeated sampling.",
+  "hypothesis": "At least one ladder configuration will outperform hard blocking on macro task utility at matched reference interval reduction without composition or provenance violations.",
+  "prior_art": [],
+  "strongest_objections": [
+    "Degraded answers may be useless for real tasks.",
+    "Repeated ranges may intersect into exact values.",
+    "Task exceptions may become a bypass.",
+    "Thresholds and precision levels may be arbitrary.",
+    "Matched-risk comparisons may favor adaptive disclosure unfairly."
+  ],
+  "falsification": {
+    "criteria": [
+      "No adaptive configuration improves utility at matched risk.",
+      "Repeated or cross-tool outputs exceed declared precision.",
+      "Precision reverses within a static epoch.",
+      "Utility gains depend on greater leakage than the hard policy."
+    ]
+  },
+  "success_criteria": [
+    "Nested deterministic transformations pass composition tests.",
+    "All transformed outputs carry valid provenance.",
+    "Adaptive disclosure improves macro utility at matched risk.",
+    "The result remains stable across seeds and ladder thresholds."
+  ],
+  "experiment": {
+    "plan": "Compare exact, hard-block, adaptive, no-hysteresis, and randomized controls across task families and adversarial query streams.",
+    "metrics": [
+      "reference interval reduction",
+      "reconstruction error",
+      "exact recovery rate",
+      "per-task utility",
+      "macro utility",
+      "level reversals",
+      "composition violations",
+      "provenance completeness"
+    ],
+    "results_path": "experiments/001-mcp-inference-security/tracks/A3-adaptive-disclosure/results"
+  },
+  "reproducibility": {
+    "command": "python experiments/001-mcp-inference-security/tracks/A3-adaptive-disclosure/benchmark.py",
+    "seed": 40503,
+    "environment": "Pending implementation"
+  },
+  "review": {
+    "outcome": "pending",
+    "limitations": [
+      "Synthetic integer state",
+      "Stable principal",
+      "Exact A2 ledger",
+      "Declared task families",
+      "Deterministic interval observer"
+    ],
+    "claim_audit": [
+      "Adaptive disclosure is not claimed to provide differential privacy.",
+      "Random false responses are a negative control, not a proposal.",
+      "H3 retains the broader defense-comparison question."
+    ]
+  },
+  "next_questions": [
+    "Which ladder thresholds form the best utility-risk frontier?",
+    "How should precision recover across epochs?",
+    "Can provenance survive downstream MCP and RAG pipelines?"
+  ]
+}
