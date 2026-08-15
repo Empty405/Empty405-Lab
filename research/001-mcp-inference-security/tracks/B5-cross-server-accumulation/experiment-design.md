@@ -16,7 +16,9 @@ Hold the principal's total query count constant while varying the number of serv
 
 ## Minimum v0.1 matrix
 
-`6 server counts × 6 accounting models × 4 overlap levels × 3 sync conditions × 3 budgets × 300 paired trials = 583,200 trials`.
+`6 server counts × 6 accounting models × 4 overlap levels × 3 sync conditions × 3 budgets × 450 paired trials = 583,200 trials`.
+
+The initial design draft incorrectly paired 300 trials with the 583,200 total; 300 trials would produce 388,800 rows. v0.1 uses 450 trials and records the correction explicitly.
 
 Primary routing is complementary at fixed total requests. Routing and fail-mode sensitivity follow after the minimum matrix.
 

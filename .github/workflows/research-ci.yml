@@ -1,0 +1,50 @@
+name: Research CI
+
+on:
+  pull_request:
+    paths:
+      - "experiments/**"
+      - "scripts/research_runner.py"
+      - "scripts/test_research_runner.py"
+      - ".github/workflows/research-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "experiments/**"
+      - "scripts/research_runner.py"
+      - "scripts/test_research_runner.py"
+      - ".github/workflows/research-ci.yml"
+  workflow_dispatch:
+    inputs:
+      regenerate_benchmarks:
+        description: "Regenerate every benchmark before validation"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: research-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test runner
+        run: python -m unittest -v scripts/test_research_runner.py
+      - name: Validate experiments
+        shell: bash
+        run: |
+          args=(--ci)
+          if [[ "${{ inputs.regenerate_benchmarks || false }}" == "true" ]]; then
+            args+=(--run-benchmarks)
+          fi
+          python scripts/research_runner.py "${args[@]}"
