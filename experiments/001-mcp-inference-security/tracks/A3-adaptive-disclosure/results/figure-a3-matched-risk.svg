@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="470">
+<rect width="100%" height="100%" fill="#0f172a"/>
+<text x="40" y="35" fill="#e2e8f0" font-family="sans-serif" font-size="22" font-weight="bold">A3 matched-risk macro utility</text>
+<line x1="70" y1="390" x2="860" y2="390" stroke="#334155"/>
+<text x="32" y="395" fill="#94a3b8" font-family="sans-serif" font-size="12">0.0</text>
+<line x1="70" y1="326.0" x2="860" y2="326.0" stroke="#334155"/>
+<text x="32" y="331.0" fill="#94a3b8" font-family="sans-serif" font-size="12">0.2</text>
+<line x1="70" y1="262.0" x2="860" y2="262.0" stroke="#334155"/>
+<text x="32" y="267.0" fill="#94a3b8" font-family="sans-serif" font-size="12">0.4</text>
+<line x1="70" y1="198.0" x2="860" y2="198.0" stroke="#334155"/>
+<text x="32" y="203.0" fill="#94a3b8" font-family="sans-serif" font-size="12">0.6</text>
+<line x1="70" y1="134.0" x2="860" y2="134.0" stroke="#334155"/>
+<text x="32" y="139.0" fill="#94a3b8" font-family="sans-serif" font-size="12">0.8</text>
+<line x1="70" y1="70" x2="860" y2="70" stroke="#334155"/>
+<text x="32" y="75" fill="#94a3b8" font-family="sans-serif" font-size="12">1.0</text>
+<rect x="120" y="188.22200000000004" width="55" height="201.77799999999996" fill="#10b981" rx="4"/>
+<text x="147" y="178.22200000000004" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="13">0.631</text>
+<rect x="190" y="180.0" width="55" height="210.0" fill="#8b5cf6" rx="4"/>
+<text x="217" y="170.0" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="13">0.656</text>
+<text x="182" y="420" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12">balanced</text>
+<rect x="370" y="246.09266666666667" width="55" height="143.90733333333333" fill="#10b981" rx="4"/>
+<text x="397" y="236.09266666666667" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="13">0.450</text>
+<rect x="440" y="243.33333333333334" width="55" height="146.66666666666666" fill="#8b5cf6" rx="4"/>
+<text x="467" y="233.33333333333334" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="13">0.458</text>
+<text x="432" y="420" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12">conservative</text>
+<rect x="620" y="159.958" width="55" height="230.042" fill="#10b981" rx="4"/>
+<text x="647" y="149.958" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="13">0.719</text>
+<rect x="690" y="150.0" width="55" height="240.0" fill="#8b5cf6" rx="4"/>
+<text x="717" y="140.0" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="13">0.750</text>
+<text x="682" y="420" text-anchor="middle" fill="#cbd5e1" font-family="sans-serif" font-size="12">permissive</text>
+<rect x="590" y="445" width="15" height="15" fill="#10b981"/><text x="615" y="457" fill="#cbd5e1" font-family="sans-serif" font-size="12">adaptive</text>
+<rect x="700" y="445" width="15" height="15" fill="#8b5cf6"/><text x="725" y="457" fill="#cbd5e1" font-family="sans-serif" font-size="12">matched hard block</text></svg>
