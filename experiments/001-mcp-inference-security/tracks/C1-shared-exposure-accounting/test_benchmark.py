@@ -48,6 +48,7 @@ class Tests(unittest.TestCase):
         self.assertEqual(row["union_units"], 8)
         self.assertEqual(row["false_charge_events"], 0)
         self.assertEqual(row["denied_requests"], 0)
+        self.assertEqual(row["duplicate_suppression"], 1.0)
 
     def test_central_partition_fails_closed(self):
         row = benchmark.simulate_trial("central", "partial_overlap", "partitioned", 0.50, 6)
