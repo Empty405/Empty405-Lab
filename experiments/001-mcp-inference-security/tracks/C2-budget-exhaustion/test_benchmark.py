@@ -30,6 +30,14 @@ class Tests(unittest.TestCase):
         row = benchmark.simulate_trial("hard_deny", "new_disjoint", 0.25, "routine", 2)
         self.assertEqual(row["post_cap_exposure_gain"], 0)
         self.assertEqual(row["released_responses"], 0)
+        self.assertEqual(row["safe_candidate_requests"], 0)
+        self.assertEqual(row["safe_reuse_rate"], 0)
+
+    def test_hard_deny_does_not_claim_safe_reuse(self):
+        row = benchmark.simulate_trial("hard_deny", "duplicate_only", 0.25, "routine", 2)
+        self.assertEqual(row["safe_candidate_requests"], 48)
+        self.assertEqual(row["safe_reused_requests"], 0)
+        self.assertEqual(row["safe_reuse_rate"], 0)
 
     def test_replay_only_reuses_without_gain(self):
         row = benchmark.simulate_trial("replay_only", "duplicate_only", 0.25, "routine", 3)
