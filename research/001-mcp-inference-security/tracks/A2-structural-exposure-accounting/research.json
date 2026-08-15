@@ -1,0 +1,76 @@
+{
+  "engine_version": "0.1",
+  "research": {
+    "id": "001",
+    "track": "A2",
+    "title": "Structural Exposure Accounting",
+    "slug": "structural-exposure-accounting",
+    "status": "designed"
+  },
+  "question": "Can schema-derived structural coverage track cumulative exposure closely enough to guide policy without full semantic understanding?",
+  "raw_idea": "Count which parts of a declared parameter space have been disclosed instead of only counting requests.",
+  "initial_claim": "Structural coverage is a lightweight approximation of cumulative information exposure.",
+  "narrowed_claim": "For declared synthetic tool projections, normalized and precision-weighted coverage may predict deterministic interval reduction better than raw request counts.",
+  "hypothesis": "At least one schema-derived proxy will correlate with reference interval reduction more consistently than request count across unique, duplicate, precision-escalation, marginal-scan, and multi-cell streams.",
+  "prior_art": [],
+  "strongest_objections": [
+    "Structure is not semantics and may badly misprice information.",
+    "Adapter precision weights may be arbitrary.",
+    "Mappings may require as much manual work as application-specific policy.",
+    "Observer prior knowledge is absent from the ledger.",
+    "Multi-cell and aggregate responses may not have a stable coverage unit."
+  ],
+  "falsification": {
+    "criteria": [
+      "Request count matches or exceeds every structural proxy.",
+      "Proxy ranking is unstable across modest tool mixtures.",
+      "Useful mappings require hidden-state access.",
+      "Mapping errors create large undetectable exposure errors."
+    ]
+  },
+  "success_criteria": [
+    "Metrics are bounded, monotonic, and replay-deterministic.",
+    "Declared duplicates share coverage keys.",
+    "Precision escalation increases weighted exposure.",
+    "At least one structural proxy consistently improves prediction over request count."
+  ],
+  "experiment": {
+    "plan": "Replay six controlled query streams over five tool projections and compare structural ledgers with deterministic observer interval reduction.",
+    "metrics": [
+      "request fraction",
+      "cell coverage",
+      "tuple coverage",
+      "marginal coverage",
+      "precision-weighted coverage",
+      "reference interval reduction",
+      "correlation",
+      "calibration error"
+    ],
+    "results_path": "experiments/001-mcp-inference-security/tracks/A2-structural-exposure-accounting/results"
+  },
+  "reproducibility": {
+    "command": "python experiments/001-mcp-inference-security/tracks/A2-structural-exposure-accounting/benchmark.py",
+    "seed": 40502,
+    "environment": "Pending implementation"
+  },
+  "review": {
+    "outcome": "pending",
+    "limitations": [
+      "Declared adapters",
+      "Synthetic schemas",
+      "Deterministic interval observer",
+      "Stable principal",
+      "Independent epochs"
+    ],
+    "claim_audit": [
+      "Structural coverage is called a proxy, not semantic knowledge.",
+      "Reference interval reduction is not proposed as production state.",
+      "No privacy guarantee or MCP vulnerability is claimed."
+    ]
+  },
+  "next_questions": [
+    "How sensitive are results to adapter precision weights?",
+    "Which summaries cannot be represented by cell coverage?",
+    "When are approximate ledgers accurate enough?"
+  ]
+}
