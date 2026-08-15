@@ -1,13 +1,13 @@
-# K14 — Autonomous next-question generation
+# K7 — Publisher
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K14  
+**Module:** K7  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Генерує наступні питання з обмежень, суперечностей і негативних результатів.
+Збирає перевірені матеріали у зрозумілий публічний артефакт.
 
 ## Початкове дослідницьке питання
 

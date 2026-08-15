@@ -1,13 +1,13 @@
-# K7 — Publisher
+# K4 — Critic
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K7  
+**Module:** K4  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Збирає перевірені матеріали у зрозумілий публічний артефакт.
+Атакує припущення, методологію та найслабші місця твердження.
 
 ## Початкове дослідницьке питання
 

@@ -1,13 +1,13 @@
-# K6 — Reviewer
+# K11 — Research drift detection
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K6  
+**Module:** K11  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Перевіряє відповідність висновків сирим результатам та обмеженням.
+Виявляє непомітну зміну початкової гіпотези після отримання результатів.
 
 ## Початкове дослідницьке питання
 

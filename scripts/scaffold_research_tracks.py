@@ -406,7 +406,7 @@ TRACKS = {
     ]
   },
   "K": {
-    "program": "002-research-engine",
+    "program": "003-research-engine",
     "title": "Research Engine",
     "plain": "Будує машинозчитуваний процес дослідження: ролі, докази, відтворюваність, CI та контроль перебільшених висновків.",
     "items": [
@@ -490,7 +490,7 @@ def slug(text: str) -> str:
 def readme(group: str, module_id: str, title: str, summary: str, program: str) -> str:
     return f"""# {module_id} — {title}
 
-**Program:** \`{program}\`  
+**Program:** `{program}`  
 **Track:** {group}  
 **Module:** {module_id}  
 **Status:** Scaffold / not yet researched

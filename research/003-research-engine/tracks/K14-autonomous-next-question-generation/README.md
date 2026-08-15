@@ -1,13 +1,13 @@
-# K3 — Scout
+# K14 — Autonomous next-question generation
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K3  
+**Module:** K14  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Шукає джерела, попередні роботи, терміни та альтернативні пояснення.
+Генерує наступні питання з обмежень, суперечностей і негативних результатів.
 
 ## Початкове дослідницьке питання
 

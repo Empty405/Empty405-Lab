@@ -1,13 +1,13 @@
-# K11 — Research drift detection
+# K12 — Overclaim detection
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K11  
+**Module:** K12  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Виявляє непомітну зміну початкової гіпотези після отримання результатів.
+Позначає висновки, сильніші за доступні докази.
 
 ## Початкове дослідницьке питання
 

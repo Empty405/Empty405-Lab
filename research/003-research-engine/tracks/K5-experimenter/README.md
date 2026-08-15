@@ -1,13 +1,13 @@
-# K8 — Claim–source provenance
+# K5 — Experimenter
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K8  
+**Module:** K5  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Зв’язує кожне зовнішнє твердження з конкретним джерелом і версією.
+Перетворює перевірюване питання на контрольований експеримент.
 
 ## Початкове дослідницьке питання
 

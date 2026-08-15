@@ -1,13 +1,13 @@
-# K2 — Falsification-first workflow
+# K13 — Multi-model peer review
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K2  
+**Module:** K13  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Ставить критерії спростування до виконання експерименту.
+Порівнює незалежні рецензії кількох моделей або методів.
 
 ## Початкове дослідницьке питання
 

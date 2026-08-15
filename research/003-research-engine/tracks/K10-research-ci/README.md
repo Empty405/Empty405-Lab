@@ -1,13 +1,13 @@
-# K5 — Experimenter
+# K10 — Research CI
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K5  
+**Module:** K10  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Перетворює перевірюване питання на контрольований експеримент.
+Запускає схеми, тести, експерименти та перевірки під час Git-змін.
 
 ## Початкове дослідницьке питання
 

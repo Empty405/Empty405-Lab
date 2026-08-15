@@ -1,13 +1,13 @@
-# K9 — Automatic reproducibility
+# K6 — Reviewer
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K9  
+**Module:** K6  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Автоматично перевіряє, що заявлені команди відтворюють результати.
+Перевіряє відповідність висновків сирим результатам та обмеженням.
 
 ## Початкове дослідницьке питання
 

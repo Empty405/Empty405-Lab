@@ -1,13 +1,13 @@
-# K12 — Overclaim detection
+# K9 — Automatic reproducibility
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K12  
+**Module:** K9  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Позначає висновки, сильніші за доступні докази.
+Автоматично перевіряє, що заявлені команди відтворюють результати.
 
 ## Початкове дослідницьке питання
 

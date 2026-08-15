@@ -1,13 +1,13 @@
-# K4 — Critic
+# K8 — Claim–source provenance
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K4  
+**Module:** K8  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Атакує припущення, методологію та найслабші місця твердження.
+Зв’язує кожне зовнішнє твердження з конкретним джерелом і версією.
 
 ## Початкове дослідницьке питання
 

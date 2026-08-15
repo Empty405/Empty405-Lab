@@ -1,13 +1,13 @@
-# K10 — Research CI
+# K1 — Research schemas
 
-**Program:** `002-research-engine`  
+**Program:** `003-research-engine`  
 **Track:** K  
-**Module:** K10  
+**Module:** K1  
 **Status:** Scaffold / not yet researched
 
 ## Простими словами
 
-Запускає схеми, тести, експерименти та перевірки під час Git-змін.
+Визначає машинозчитуваний контракт для питання, гіпотези, доказів, експерименту й результату.
 
 ## Початкове дослідницьке питання
 
