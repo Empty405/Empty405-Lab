@@ -1,35 +1,59 @@
-# A4 — Security–utility trade-off
+# A4 — Security–Utility Trade-off
 
-**Program:** `001-mcp-inference-security`  
-**Track:** A  
-**Module:** A4  
-**Status:** Scaffold / not yet researched
+**Program:** Research 001 — MCP Inference Security  
+**Track:** A4  
+**Status:** Designed  
+**Synthesizes:** A1–A3
 
 ## Простими словами
 
-Вимірює, скільки корисності втрачає чесний клієнт заради зменшення реконструкції прихованого стану.
+Захист, який нічого не показує, майже завжди «безпечний», але ним неможливо користуватися. A4 будує чесну карту компромісів: скільки reconstruction, utility, delay і operational cost дає кожна політика на однаковому workload.
 
-## Початкове дослідницьке питання
+## Research question
 
-> За яких умов цей механізм або проблема реально змінює безпеку, реконструкцію інформації, корисність чи вартість системи?
+> Which disclosure policies lie on the Pareto frontier across reconstruction risk, legitimate task utility, availability delay, and accounting cost under shared experimental conditions?
 
-## Межі модуля
+## Core principle
 
-Цей файл поки є карткою-навігатором, а не готовим науковим висновком. Перед експериментом тут потрібно окремо записати припущення, те, що модуль не досліджує, залежності від інших треків і критерії зупинки.
+A policy is dominated if another policy is:
 
-## Майбутня структура дослідження
+- no worse on every reported objective; and
+- strictly better on at least one objective.
 
-- `README.md` — питання, гіпотеза, межі та поточний статус;
-- `architecture.md` — компоненти, потоки даних і trust boundaries;
-- `related-work.md` — попередні роботи та джерела;
-- `experiment-design.md` — змінні, контролі, сценарії та процедура;
-- `metrics.md` — формули, одиниці й інваріанти;
-- `falsification.md` — результат, який послабить або спростує гіпотезу;
-- `results/` — сирі результати, таблиці й графіки після запуску.
+A4 does not collapse all objectives into one score by default. A single weighted score can hide who selected the weights.
 
-## Наступний крок
+## Narrow hypothesis
 
-1. Пояснити проблему одним конкретним прикладом.
-2. Сформулювати вузьку гіпотезу й нульову гіпотезу.
-3. Визначити, що буде доказом проти нашої ідеї.
-4. Лише після цього проєктувати експеримент і писати код.
+No single policy will dominate across every task mix and deadline. Hard blocking, rate limiting, structural budgets, and adaptive disclosure will occupy different parts of the frontier, while some configurations will be strictly dominated and can be discarded.
+
+## Null hypothesis
+
+After controlling for risk and workload, one simple policy dominates the alternatives or apparent trade-offs disappear as artifacts of incompatible metrics.
+
+## Inputs from A1–A3
+
+A1 contributes the delay/final-exposure distinction. A2 contributes calibrated structural exposure and its failure cases. A3 contributes task-specific utility, matched-risk comparison, and a negative adaptive result.
+
+Published A1–A3 summary values are contextual evidence only. The A4 comparison reruns policies in one unified harness.
+
+## Objectives
+
+Minimize:
+
+- reference interval reduction;
+- exact recovery;
+- p95 task delay;
+- denied legitimate tasks;
+- ledger bytes;
+- policy evaluation time.
+
+Maximize:
+
+- macro task utility;
+- per-task minimum utility;
+- deadline success;
+- provenance completeness.
+
+## Decision rule
+
+A4 succeeds if it produces a reproducible frontier, identifies robustly dominated configurations, and shows how conclusions change under declared task weights and deadlines. It fails if rankings depend primarily on arbitrary normalization or incomparable workloads.
