@@ -1,7 +1,8 @@
 {
   "engine_version": "0.1",
   "research": {
-    "id": "001-A1",
+    "id": "001",
+    "track": "A1",
     "title": "Request-Frequency vs Cumulative Exposure",
     "slug": "request-frequency-vs-cumulative-exposure",
     "status": "designed"
