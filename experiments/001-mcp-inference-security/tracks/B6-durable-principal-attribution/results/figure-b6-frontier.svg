@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="620" viewBox="0 0 940 620">
+<rect width="100%" height="100%" fill="#08131f"/>
+<style>text{font-family:system-ui,sans-serif;fill:#dbeafe}.grid{stroke:#294052}</style>
+<text x="90" y="34" font-size="21" font-weight="700">B6: budget bypass versus cross-context linkability</text>
+<text x="90" y="55" font-size="12">108,000 synthetic paired trials · lower-left is preferable</text>
+<line class="grid" x1="90.0" y1="75" x2="90.0" y2="485"/>
+<text x="90.0" y="509" text-anchor="middle" font-size="11">0</text>
+<line class="grid" x1="280.0" y1="75" x2="280.0" y2="485"/>
+<text x="280.0" y="509" text-anchor="middle" font-size="11">1</text>
+<line class="grid" x1="470.0" y1="75" x2="470.0" y2="485"/>
+<text x="470.0" y="509" text-anchor="middle" font-size="11">2</text>
+<line class="grid" x1="660.0" y1="75" x2="660.0" y2="485"/>
+<text x="660.0" y="509" text-anchor="middle" font-size="11">3</text>
+<line class="grid" x1="850.0" y1="75" x2="850.0" y2="485"/>
+<text x="850.0" y="509" text-anchor="middle" font-size="11">4</text>
+<line class="grid" x1="90" y1="485" x2="850" y2="485"/>
+<text x="78" y="489" text-anchor="end" font-size="11">0.00</text>
+<line class="grid" x1="90" y1="382.5" x2="850" y2="382.5"/>
+<text x="78" y="386.5" text-anchor="end" font-size="11">0.25</text>
+<line class="grid" x1="90" y1="280.0" x2="850" y2="280.0"/>
+<text x="78" y="284.0" text-anchor="end" font-size="11">0.50</text>
+<line class="grid" x1="90" y1="177.5" x2="850" y2="177.5"/>
+<text x="78" y="181.5" text-anchor="end" font-size="11">0.75</text>
+<line class="grid" x1="90" y1="75.0" x2="850" y2="75.0"/>
+<text x="78" y="79.0" text-anchor="end" font-size="11">1.00</text>
+<circle cx="280.0" cy="280.5" r="8" fill="#ef4444"/>
+<text x="280.0" y="268.5" text-anchor="middle" font-size="12">session</text>
+<circle cx="470.0" cy="383.9" r="8" fill="#f59e0b"/>
+<text x="470.0" y="371.9" text-anchor="middle" font-size="12">account</text>
+<circle cx="850.0" cy="485.0" r="8" fill="#8b5cf6"/>
+<text x="850.0" y="473.0" text-anchor="middle" font-size="12">global_id</text>
+<circle cx="517.5" cy="433.7" r="8" fill="#3b82f6"/>
+<text x="517.5" y="421.7" text-anchor="middle" font-size="12">pairwise</text>
+<circle cx="280.0" cy="446.5" r="8" fill="#22c55e"/>
+<text x="280.0" y="468.5" text-anchor="middle" font-size="12">anonymous_credential</text>
+<circle cx="90.0" cy="485.0" r="8" fill="#94a3b8"/>
+<text x="90.0" y="473.0" text-anchor="middle" font-size="12">oracle</text>
+<text x="470.0" y="555" text-anchor="middle" font-size="13">linked contexts (ordinal model)</text>
+<text x="22" y="280" transform="rotate(-90 22 280)" text-anchor="middle" font-size="13">budget-bypass rate</text>
+<text x="90" y="598" font-size="11">Oracle is evaluator-only and is not a deployable privacy mechanism.</text>
+</svg>
