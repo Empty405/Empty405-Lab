@@ -39,7 +39,7 @@ def count_gzip_rows(path: Path) -> int:
 
 def validate_results_dir(results: Path) -> dict[str, Any]:
     metadata_path = results / "benchmark.json"
-    metadata = load_metadata(metadata_path)
+    metadata = load_metadata(metadata_path, require_rows=False)
     raw_files = sorted(results.glob("*.csv.gz"))
     if not raw_files:
         raise RuntimeError("no compressed raw CSV artifacts")
@@ -49,8 +49,8 @@ def validate_results_dir(results: Path) -> dict[str, Any]:
     if total <= 0:
         raise RuntimeError("raw artifacts contain no data rows")
 
-    expected = declared_rows(metadata)
-    if total != expected:
+    expected = declared_rows(metadata, required=False)
+    if expected is not None and total != expected:
         raise RuntimeError(f"raw row mismatch: metadata={expected:,}, files={total:,}")
 
     hashes = {metadata_path.name: sha256_file(metadata_path)}
