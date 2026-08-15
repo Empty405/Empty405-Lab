@@ -1,35 +1,58 @@
-# B5 — Cross-server accumulation
+# B5 — Cross-server Accumulation
 
-**Program:** `001-mcp-inference-security`  
-**Track:** B  
-**Module:** B5  
-**Status:** Scaffold / not yet researched
+**Program:** Research 001 — MCP Inference Security  
+**Track:** B — Identity / Principal Problem  
+**Status:** Designed  
+**Depends on:** A2, B1, B4  
+**Feeds into:** B6, C1, F2, F4, F6, J2, J3
 
 ## Простими словами
 
-Перевіряє, як ідентифікувати одного принципала на кількох MCP-серверах.
+Один MCP-сервер може чесно зупинити клієнта на 25% exposure. Але якщо клієнт звернеться до чотирьох незалежних серверів, кожен із них може окремо видати дозволені 25%, а клієнт локально складе 100%.
 
-## Початкове дослідницьке питання
+B5 перевіряє, що відбувається, коли exposure accounting розділений між серверами, які мають різних операторів, політики, затримки синхронізації та правила приватності.
 
-> За яких умов цей механізм або проблема реально змінює безпеку, реконструкцію інформації, корисність чи вартість системи?
+## Research question
 
-## Межі модуля
+> How does fragmented exposure accounting across independently operated MCP servers affect aggregate reconstruction, and what security–privacy–availability trade-offs arise from coordinating their ledgers?
 
-Цей файл поки є карткою-навігатором, а не готовим науковим висновком. Перед експериментом тут потрібно окремо записати припущення, те, що модуль не досліджує, залежності від інших треків і критерії зупинки.
+## Narrow hypothesis
 
-## Майбутня структура дослідження
+За суто локальних per-server budgets aggregate exposure зростатиме з кількістю серверів до насичення hidden state. Централізований або федеративний shared budget зменшить accumulation, але створить metadata disclosure, synchronization, availability, trust і governance costs. Eventual consistency залишить exploitable race windows.
 
-- `README.md` — питання, гіпотеза, межі та поточний статус;
-- `architecture.md` — компоненти, потоки даних і trust boundaries;
-- `related-work.md` — попередні роботи та джерела;
-- `experiment-design.md` — змінні, контролі, сценарії та процедура;
-- `metrics.md` — формули, одиниці й інваріанти;
-- `falsification.md` — результат, який послабить або спростує гіпотезу;
-- `results/` — сирі результати, таблиці й графіки після запуску.
+## Null hypothesis
 
-## Наступний крок
+Після фіксації загальної кількості запитів server count і synchronization model не змінюють aggregate reconstruction; природне перекриття відповідей або локальні budgets достатньо обмежують union.
 
-1. Пояснити проблему одним конкретним прикладом.
-2. Сформулювати вузьку гіпотезу й нульову гіпотезу.
-3. Визначити, що буде доказом проти нашої ідеї.
-4. Лише після цього проєктувати експеримент і писати код.
+## Unit of analysis
+
+- **principal:** один ground-truth client, відомий evaluator;
+- **server:** окремий MCP policy/accounting domain;
+- **local ledger:** exposure state, який бачить один server;
+- **federated view:** узгоджена або приблизна cross-server exposure state;
+- **sync event:** передача budget metadata між domains;
+- **client observer:** локально об'єднує факти з усіх servers.
+
+## Scope
+
+Included:
+
+- 1–32 MCP servers;
+- fixed total request volume;
+- complementary, random та overlapping server outputs;
+- local, centralized, eventual, signed-token, sketch і oracle accounting;
+- sync lag, partition/failure, metadata disclosure, utility та overhead.
+
+Excluded:
+
+- кілька organizations як правова модель — F3;
+- кілька незалежних clients — F1;
+- семантична cross-tool composition — D4;
+- production deployment — J1–J3;
+- остаточний durable principal mechanism — B6.
+
+## Decision rule
+
+B5 підтримує гіпотезу, якщо local ledgers допускають cross-server union вище nominal principal budget за matched requests, а inconsistent federated views створюють вимірюваний race-window gain.
+
+Захист вважається кращим лише разом зі звітом про shared metadata, false linkage, availability, latency та behavior under partial failure.
