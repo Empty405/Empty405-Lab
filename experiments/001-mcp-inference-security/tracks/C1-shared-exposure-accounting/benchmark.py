@@ -144,6 +144,8 @@ def simulate_trial(mechanism: str, workload: str, sync: str, budget: float, tria
 
         if globally_seen and not locally_seen:
             false_charge += 1
+        if globally_seen and locally_seen:
+            suppressed_duplicates += 1
         if not globally_seen and locally_seen:
             missed_charge += 1
         ledger.add(unit)
