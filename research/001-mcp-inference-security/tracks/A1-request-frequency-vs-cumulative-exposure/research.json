@@ -1,0 +1,72 @@
+{
+  "engine_version": "0.1",
+  "research": {
+    "id": "001-A1",
+    "title": "Request-Frequency vs Cumulative Exposure",
+    "slug": "request-frequency-vs-cumulative-exposure",
+    "status": "designed"
+  },
+  "question": "Under a patient observer, do request-frequency controls reduce final reconstructable information, or primarily increase collection time?",
+  "raw_idea": "Compare request counts with cumulative information released over repeated permitted queries.",
+  "initial_claim": "Rate limiting does not solve cumulative exposure.",
+  "narrowed_claim": "A resettable window rate limiter may delay a patient observer without changing the final distinct facts released, while a non-resetting exposure budget may change final observable state.",
+  "hypothesis": "As the observer deadline increases, resettable rate-limit exposure converges toward baseline, while exact non-resetting coverage budgets remain bounded.",
+  "prior_art": [],
+  "strongest_objections": [
+    "Many real secrets are time-sensitive, so delay can be effective protection.",
+    "A non-resetting request quota may perform as well as structural accounting.",
+    "Structural coverage may correlate poorly with semantic information.",
+    "The toy query space may make enumeration unrealistically easy."
+  ],
+  "falsification": {
+    "criteria": [
+      "Patient rate-limited runs fail to converge after all delayed queries are released.",
+      "Coverage controls fail to bound the exact unit they account for.",
+      "Differences are caused by unequal released-query opportunities.",
+      "Results are unstable across seeds and modest parameter changes."
+    ]
+  },
+  "success_criteria": [
+    "Time-to-exposure rises under rate limiting.",
+    "Final patient-observer exposure converges toward baseline under resettable limits.",
+    "Coverage budgets create persistent final-exposure separation.",
+    "Security and legitimate utility are reported together."
+  ],
+  "experiment": {
+    "plan": "Replay identical static scenarios and query streams under baseline, resettable rate limits, lifetime quotas, exact coverage budgets, and hybrids.",
+    "metrics": [
+      "final observable state",
+      "reconstruction score",
+      "time to exposure threshold",
+      "exposure per released response",
+      "legitimate utility",
+      "availability cost"
+    ],
+    "results_path": "experiments/001-mcp-inference-security/tracks/A1-request-frequency-vs-cumulative-exposure/results"
+  },
+  "reproducibility": {
+    "command": "python experiments/001-mcp-inference-security/tracks/A1-request-frequency-vs-cumulative-exposure/benchmark.py",
+    "seed": 40501,
+    "environment": "Pending implementation"
+  },
+  "review": {
+    "outcome": "pending",
+    "limitations": [
+      "Static hidden state",
+      "Single stable principal",
+      "Exact structural coverage",
+      "Deterministic observer",
+      "Synthetic tools"
+    ],
+    "claim_audit": [
+      "Rate limiting is not described as generally ineffective.",
+      "Structural coverage is described as a proxy, not privacy loss.",
+      "No MCP vulnerability or protocol requirement is claimed."
+    ]
+  },
+  "next_questions": [
+    "When does delay become sufficient protection for time-sensitive state?",
+    "When does a lifetime request quota match a coverage budget?",
+    "How should duplicate observations be valued?"
+  ]
+}
