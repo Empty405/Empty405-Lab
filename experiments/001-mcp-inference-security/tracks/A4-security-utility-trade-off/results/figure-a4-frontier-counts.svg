@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650">
+<rect width="100%" height="100%" fill="#0f172a"/>
+<text x="40" y="35" fill="#e2e8f0" font-family="sans-serif" font-size="22" font-weight="bold">A4 frontier inclusion across 24 workload/deadline contexts</text>
+<line x1="85" y1="490.0" x2="1070" y2="490.0" stroke="#334155"/>
+<text x="45" y="495.0" fill="#94a3b8" font-family="sans-serif" font-size="12">0</text>
+<line x1="85" y1="382.5" x2="1070" y2="382.5" stroke="#334155"/>
+<text x="45" y="387.5" fill="#94a3b8" font-family="sans-serif" font-size="12">6</text>
+<line x1="85" y1="275.0" x2="1070" y2="275.0" stroke="#334155"/>
+<text x="45" y="280.0" fill="#94a3b8" font-family="sans-serif" font-size="12">12</text>
+<line x1="85" y1="167.5" x2="1070" y2="167.5" stroke="#334155"/>
+<text x="45" y="172.5" fill="#94a3b8" font-family="sans-serif" font-size="12">18</text>
+<line x1="85" y1="60.0" x2="1070" y2="60.0" stroke="#334155"/>
+<text x="45" y="65.0" fill="#94a3b8" font-family="sans-serif" font-size="12">24</text>
+<rect x="100" y="60.0" width="48" height="430.0" fill="#10b981" rx="3"/>
+<text transform="translate(124,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">adaptive_balanced</text>
+<rect x="165" y="60.0" width="48" height="430.0" fill="#10b981" rx="3"/>
+<text transform="translate(189,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">adaptive_conservative</text>
+<rect x="230" y="60.0" width="48" height="430.0" fill="#10b981" rx="3"/>
+<text transform="translate(254,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">adaptive_permissive</text>
+<rect x="295" y="60.0" width="48" height="430.0" fill="#10b981" rx="3"/>
+<text transform="translate(319,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">deny_all</text>
+<rect x="360" y="60.0" width="48" height="430.0" fill="#10b981" rx="3"/>
+<text transform="translate(384,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">quota_0.25</text>
+<rect x="425" y="60.0" width="48" height="430.0" fill="#10b981" rx="3"/>
+<text transform="translate(449,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">quota_0.50</text>
+<rect x="490" y="60.0" width="48" height="430.0" fill="#10b981" rx="3"/>
+<text transform="translate(514,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">quota_0.75</text>
+<rect x="555" y="60.0" width="48" height="430.0" fill="#10b981" rx="3"/>
+<text transform="translate(579,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">release_all</text>
+<rect x="620" y="167.5" width="48" height="322.5" fill="#eab308" rx="3"/>
+<text transform="translate(644,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">rate_5</text>
+<rect x="685" y="275.0" width="48" height="215.0" fill="#eab308" rx="3"/>
+<text transform="translate(709,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">rate_10</text>
+<rect x="750" y="275.0" width="48" height="215.0" fill="#eab308" rx="3"/>
+<text transform="translate(774,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">rate_20</text>
+<rect x="815" y="490.0" width="48" height="0.0" fill="#ef4444" rx="3"/>
+<text transform="translate(839,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">coverage_0.25</text>
+<rect x="880" y="490.0" width="48" height="0.0" fill="#ef4444" rx="3"/>
+<text transform="translate(904,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">coverage_0.50</text>
+<rect x="945" y="490.0" width="48" height="0.0" fill="#ef4444" rx="3"/>
+<text transform="translate(969,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">coverage_0.75</text>
+<rect x="1010" y="490.0" width="48" height="0.0" fill="#ef4444" rx="3"/>
+<text transform="translate(1034,520) rotate(55)" fill="#cbd5e1" font-family="sans-serif" font-size="10">hybrid_10_0.50</text>
+</svg>
