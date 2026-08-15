@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Check whether the local environment can safely run Empty405-Lab research."""
+
 from __future__ import annotations
 
 import argparse
