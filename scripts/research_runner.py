@@ -3,8 +3,6 @@
 from __future__ import annotations
 
 import argparse
-import csv
-import gzip
 import hashlib
 import json
 import subprocess
@@ -12,6 +10,8 @@ import sys
 import time
 from dataclasses import dataclass
 from pathlib import Path
+
+from validation.integrity_checker import validate_results_dir
 
 
 @dataclass(frozen=True)
@@ -44,33 +44,8 @@ def fingerprint(module: Module) -> str:
     return digest.hexdigest()
 
 
-def count_gzip_rows(path: Path) -> int:
-    with gzip.open(path, "rt", newline="", encoding="utf-8") as handle:
-        return sum(1 for _ in csv.reader(handle)) - 1
-
-
-def declared_rows(metadata: dict) -> int | None:
-    for key in ("trial_rows", "checkpoint_rows", "rows"):
-        value = metadata.get(key)
-        if isinstance(value, int):
-            return value
-    return None
-
-
 def validate_results(module: Module) -> dict:
-    results = module.path / "results"
-    metadata = json.loads((results / "benchmark.json").read_text(encoding="utf-8"))
-    raw_files = sorted(results.glob("*.csv.gz"))
-    if not raw_files:
-        raise RuntimeError("no compressed raw CSV artifacts")
-    counts = {path.name: count_gzip_rows(path) for path in raw_files}
-    total = sum(counts.values())
-    if total <= 0:
-        raise RuntimeError("raw artifacts contain no data rows")
-    expected = declared_rows(metadata)
-    if expected is not None and total != expected:
-        raise RuntimeError(f"raw row mismatch: metadata={expected:,}, files={total:,}")
-    return {"raw_files": counts, "raw_rows": total, "declared_rows": expected}
+    return validate_results_dir(module.path / "results")
 
 
 def run_command(command: list[str], cwd: Path) -> None:
@@ -129,13 +104,23 @@ def main() -> int:
             if args.run_benchmarks:
                 run_command([sys.executable, "benchmark.py"], module.path)
             report = validate_results(module)
-            state["modules"][key] = {"status": "passed", "fingerprint": fingerprint(module), "checked_at": int(time.time()), **report}
+            state["modules"][key] = {
+                "status": "passed",
+                "fingerprint": fingerprint(module),
+                "checked_at": int(time.time()),
+                **report,
+            }
             if not args.ci:
                 save_state(state_path, state)
             print(f"PASS {module.key}: {report['raw_rows']:,} raw rows")
             processed += 1
         except Exception as error:
-            state["modules"][key] = {"status": "failed", "fingerprint": mark, "checked_at": int(time.time()), "error": str(error)}
+            state["modules"][key] = {
+                "status": "failed",
+                "fingerprint": mark,
+                "checked_at": int(time.time()),
+                "error": str(error),
+            }
             if not args.ci:
                 save_state(state_path, state)
             print(f"FAIL {module.key}: {error}", file=sys.stderr)
