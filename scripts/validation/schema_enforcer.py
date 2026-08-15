@@ -48,31 +48,56 @@ def declared_rows(metadata: dict[str, Any], required: bool = True) -> int | None
     return values[0][1]
 
 
-def validate_metadata(metadata: Any, require_rows: bool = True) -> dict[str, Any]:
+def validate_metadata(
+    metadata: Any,
+    require_rows: bool = True,
+    require_finite: bool = True,
+) -> dict[str, Any]:
     if not isinstance(metadata, dict) or not metadata:
         raise SchemaError("benchmark metadata must be a non-empty JSON object")
-    _reject_non_finite(metadata)
+    if require_finite:
+        _reject_non_finite(metadata)
     declared_rows(metadata, required=require_rows)
     return metadata
 
 
-def load_metadata(path: Path, require_rows: bool = False) -> dict[str, Any]:
+def load_metadata(
+    path: Path,
+    require_rows: bool = False,
+    require_finite: bool = False,
+) -> dict[str, Any]:
     try:
         metadata = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, UnicodeError, json.JSONDecodeError) as error:
         raise SchemaError(f"{path}: unreadable JSON: {error}") from error
-    return validate_metadata(metadata, require_rows=require_rows)
+    return validate_metadata(
+        metadata,
+        require_rows=require_rows,
+        require_finite=require_finite,
+    )
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("paths", nargs="+", type=Path, help="benchmark.json files")
-    parser.add_argument("--strict", action="store_true", help="require a declared raw-row count")
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="require declared rows and reject NaN/Infinity",
+    )
     args = parser.parse_args()
     for path in args.paths:
-        metadata = load_metadata(path, require_rows=args.strict)
+        metadata = load_metadata(
+            path,
+            require_rows=args.strict,
+            require_finite=args.strict,
+        )
         count = declared_rows(metadata, required=False)
-        detail = f"{count:,} declared rows" if count is not None else "legacy metadata; row count verified from artifacts"
+        detail = (
+            f"{count:,} declared rows"
+            if count is not None
+            else "legacy metadata; row count verified from artifacts"
+        )
         print(f"PASS {path}: {detail}")
     return 0
 
