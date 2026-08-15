@@ -24361,9 +24361,3437 @@
         0.0
       ],
       "availability_induced_exposure_gain": 0.0,
-      "availability_induced_exposure_gain_c
-... 73119 bytes omitted ...
-
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 48.0,
+      "dependency_calls_ci95": [
+        48.0,
+        48.0
+      ],
+      "policy_state_reads": 48.0,
+      "policy_state_reads_ci95": [
+        48.0,
+        48.0
+      ],
+      "audit_writes": 48.0,
+      "audit_writes_ci95": [
+        48.0,
+        48.0
+      ],
+      "metadata_bytes": 3456.0,
+      "metadata_bytes_ci95": [
+        3456.0,
+        3456.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "outage",
+      "workload": "low",
+      "criticality": "critical",
+      "admitted_tasks": 24.0,
+      "admitted_tasks_ci95": [
+        24.0,
+        24.0
+      ],
+      "completed_tasks": 8.465,
+      "completed_tasks_ci95": [
+        8.209229,
+        8.720771
+      ],
+      "task_completion_rate": 0.352708,
+      "task_completion_rate_ci95": [
+        0.342051,
+        0.363365
+      ],
+      "useful_responses": 8.465,
+      "useful_responses_ci95": [
+        8.209229,
+        8.720771
+      ],
+      "denied_tasks": 15.535,
+      "denied_tasks_ci95": [
+        15.279229,
+        15.790771
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 24.0,
+      "dependency_calls_ci95": [
+        24.0,
+        24.0
+      ],
+      "policy_state_reads": 24.0,
+      "policy_state_reads_ci95": [
+        24.0,
+        24.0
+      ],
+      "audit_writes": 24.0,
+      "audit_writes_ci95": [
+        24.0,
+        24.0
+      ],
+      "metadata_bytes": 1728.0,
+      "metadata_bytes_ci95": [
+        1728.0,
+        1728.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "outage",
+      "workload": "low",
+      "criticality": "optional",
+      "admitted_tasks": 24.0,
+      "admitted_tasks_ci95": [
+        24.0,
+        24.0
+      ],
+      "completed_tasks": 8.025,
+      "completed_tasks_ci95": [
+        7.773968,
+        8.276032
+      ],
+      "task_completion_rate": 0.334375,
+      "task_completion_rate_ci95": [
+        0.323915,
+        0.344835
+      ],
+      "useful_responses": 8.025,
+      "useful_responses_ci95": [
+        7.773968,
+        8.276032
+      ],
+      "denied_tasks": 15.975,
+      "denied_tasks_ci95": [
+        15.723968,
+        16.226032
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 24.0,
+      "dependency_calls_ci95": [
+        24.0,
+        24.0
+      ],
+      "policy_state_reads": 24.0,
+      "policy_state_reads_ci95": [
+        24.0,
+        24.0
+      ],
+      "audit_writes": 24.0,
+      "audit_writes_ci95": [
+        24.0,
+        24.0
+      ],
+      "metadata_bytes": 1728.0,
+      "metadata_bytes_ci95": [
+        1728.0,
+        1728.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "outage",
+      "workload": "low",
+      "criticality": "routine",
+      "admitted_tasks": 24.0,
+      "admitted_tasks_ci95": [
+        24.0,
+        24.0
+      ],
+      "completed_tasks": 8.47,
+      "completed_tasks_ci95": [
+        8.213463,
+        8.726537
+      ],
+      "task_completion_rate": 0.352917,
+      "task_completion_rate_ci95": [
+        0.342228,
+        0.363606
+      ],
+      "useful_responses": 8.47,
+      "useful_responses_ci95": [
+        8.213463,
+        8.726537
+      ],
+      "denied_tasks": 15.53,
+      "denied_tasks_ci95": [
+        15.273463,
+        15.786537
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 24.0,
+      "dependency_calls_ci95": [
+        24.0,
+        24.0
+      ],
+      "policy_state_reads": 24.0,
+      "policy_state_reads_ci95": [
+        24.0,
+        24.0
+      ],
+      "audit_writes": 24.0,
+      "audit_writes_ci95": [
+        24.0,
+        24.0
+      ],
+      "metadata_bytes": 1728.0,
+      "metadata_bytes_ci95": [
+        1728.0,
+        1728.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "outage",
+      "workload": "sustained",
+      "criticality": "critical",
+      "admitted_tasks": 72.0,
+      "admitted_tasks_ci95": [
+        72.0,
+        72.0
+      ],
+      "completed_tasks": 26.135,
+      "completed_tasks_ci95": [
+        25.71273,
+        26.55727
+      ],
+      "task_completion_rate": 0.362986,
+      "task_completion_rate_ci95": [
+        0.357121,
+        0.368851
+      ],
+      "useful_responses": 26.135,
+      "useful_responses_ci95": [
+        25.71273,
+        26.55727
+      ],
+      "denied_tasks": 45.865,
+      "denied_tasks_ci95": [
+        45.44273,
+        46.28727
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 72.0,
+      "dependency_calls_ci95": [
+        72.0,
+        72.0
+      ],
+      "policy_state_reads": 72.0,
+      "policy_state_reads_ci95": [
+        72.0,
+        72.0
+      ],
+      "audit_writes": 72.0,
+      "audit_writes_ci95": [
+        72.0,
+        72.0
+      ],
+      "metadata_bytes": 5184.0,
+      "metadata_bytes_ci95": [
+        5184.0,
+        5184.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "outage",
+      "workload": "sustained",
+      "criticality": "optional",
+      "admitted_tasks": 72.0,
+      "admitted_tasks_ci95": [
+        72.0,
+        72.0
+      ],
+      "completed_tasks": 25.91,
+      "completed_tasks_ci95": [
+        25.410549,
+        26.409451
+      ],
+      "task_completion_rate": 0.359861,
+      "task_completion_rate_ci95": [
+        0.352924,
+        0.366798
+      ],
+      "useful_responses": 25.91,
+      "useful_responses_ci95": [
+        25.410549,
+        26.409451
+      ],
+      "denied_tasks": 46.09,
+      "denied_tasks_ci95": [
+        45.590549,
+        46.589451
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 72.0,
+      "dependency_calls_ci95": [
+        72.0,
+        72.0
+      ],
+      "policy_state_reads": 72.0,
+      "policy_state_reads_ci95": [
+        72.0,
+        72.0
+      ],
+      "audit_writes": 72.0,
+      "audit_writes_ci95": [
+        72.0,
+        72.0
+      ],
+      "metadata_bytes": 5184.0,
+      "metadata_bytes_ci95": [
+        5184.0,
+        5184.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "outage",
+      "workload": "sustained",
+      "criticality": "routine",
+      "admitted_tasks": 72.0,
+      "admitted_tasks_ci95": [
+        72.0,
+        72.0
+      ],
+      "completed_tasks": 25.78,
+      "completed_tasks_ci95": [
+        25.316854,
+        26.243146
+      ],
+      "task_completion_rate": 0.358056,
+      "task_completion_rate_ci95": [
+        0.351623,
+        0.364488
+      ],
+      "useful_responses": 25.78,
+      "useful_responses_ci95": [
+        25.316854,
+        26.243146
+      ],
+      "denied_tasks": 46.22,
+      "denied_tasks_ci95": [
+        45.756854,
+        46.683146
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 72.0,
+      "dependency_calls_ci95": [
+        72.0,
+        72.0
+      ],
+      "policy_state_reads": 72.0,
+      "policy_state_reads_ci95": [
+        72.0,
+        72.0
+      ],
+      "audit_writes": 72.0,
+      "audit_writes_ci95": [
+        72.0,
+        72.0
+      ],
+      "metadata_bytes": 5184.0,
+      "metadata_bytes_ci95": [
+        5184.0,
+        5184.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "partition",
+      "workload": "burst",
+      "criticality": "critical",
+      "admitted_tasks": 48.0,
+      "admitted_tasks_ci95": [
+        48.0,
+        48.0
+      ],
+      "completed_tasks": 9.43,
+      "completed_tasks_ci95": [
+        9.16076,
+        9.69924
+      ],
+      "task_completion_rate": 0.196458,
+      "task_completion_rate_ci95": [
+        0.190849,
+        0.202068
+      ],
+      "useful_responses": 9.43,
+      "useful_responses_ci95": [
+        9.16076,
+        9.69924
+      ],
+      "denied_tasks": 38.57,
+      "denied_tasks_ci95": [
+        38.30076,
+        38.83924
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 48.0,
+      "dependency_calls_ci95": [
+        48.0,
+        48.0
+      ],
+      "policy_state_reads": 48.0,
+      "policy_state_reads_ci95": [
+        48.0,
+        48.0
+      ],
+      "audit_writes": 48.0,
+      "audit_writes_ci95": [
+        48.0,
+        48.0
+      ],
+      "metadata_bytes": 3456.0,
+      "metadata_bytes_ci95": [
+        3456.0,
+        3456.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "partition",
+      "workload": "burst",
+      "criticality": "optional",
+      "admitted_tasks": 48.0,
+      "admitted_tasks_ci95": [
+        48.0,
+        48.0
+      ],
+      "completed_tasks": 9.57,
+      "completed_tasks_ci95": [
+        9.287807,
+        9.852193
+      ],
+      "task_completion_rate": 0.199375,
+      "task_completion_rate_ci95": [
+        0.193496,
+        0.205254
+      ],
+      "useful_responses": 9.57,
+      "useful_responses_ci95": [
+        9.287807,
+        9.852193
+      ],
+      "denied_tasks": 38.43,
+      "denied_tasks_ci95": [
+        38.147807,
+        38.712193
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 48.0,
+      "dependency_calls_ci95": [
+        48.0,
+        48.0
+      ],
+      "policy_state_reads": 48.0,
+      "policy_state_reads_ci95": [
+        48.0,
+        48.0
+      ],
+      "audit_writes": 48.0,
+      "audit_writes_ci95": [
+        48.0,
+        48.0
+      ],
+      "metadata_bytes": 3456.0,
+      "metadata_bytes_ci95": [
+        3456.0,
+        3456.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "partition",
+      "workload": "burst",
+      "criticality": "routine",
+      "admitted_tasks": 48.0,
+      "admitted_tasks_ci95": [
+        48.0,
+        48.0
+      ],
+      "completed_tasks": 9.66,
+      "completed_tasks_ci95": [
+        9.383009,
+        9.936991
+      ],
+      "task_completion_rate": 0.20125,
+      "task_completion_rate_ci95": [
+        0.195479,
+        0.207021
+      ],
+      "useful_responses": 9.66,
+      "useful_responses_ci95": [
+        9.383009,
+        9.936991
+      ],
+      "denied_tasks": 38.34,
+      "denied_tasks_ci95": [
+        38.063009,
+        38.616991
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 48.0,
+      "dependency_calls_ci95": [
+        48.0,
+        48.0
+      ],
+      "policy_state_reads": 48.0,
+      "policy_state_reads_ci95": [
+        48.0,
+        48.0
+      ],
+      "audit_writes": 48.0,
+      "audit_writes_ci95": [
+        48.0,
+        48.0
+      ],
+      "metadata_bytes": 3456.0,
+      "metadata_bytes_ci95": [
+        3456.0,
+        3456.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "partition",
+      "workload": "low",
+      "criticality": "critical",
+      "admitted_tasks": 24.0,
+      "admitted_tasks_ci95": [
+        24.0,
+        24.0
+      ],
+      "completed_tasks": 9.675,
+      "completed_tasks_ci95": [
+        9.416205,
+        9.933795
+      ],
+      "task_completion_rate": 0.403125,
+      "task_completion_rate_ci95": [
+        0.392342,
+        0.413908
+      ],
+      "useful_responses": 9.675,
+      "useful_responses_ci95": [
+        9.416205,
+        9.933795
+      ],
+      "denied_tasks": 14.325,
+      "denied_tasks_ci95": [
+        14.066205,
+        14.583795
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 24.0,
+      "dependency_calls_ci95": [
+        24.0,
+        24.0
+      ],
+      "policy_state_reads": 24.0,
+      "policy_state_reads_ci95": [
+        24.0,
+        24.0
+      ],
+      "audit_writes": 24.0,
+      "audit_writes_ci95": [
+        24.0,
+        24.0
+      ],
+      "metadata_bytes": 1728.0,
+      "metadata_bytes_ci95": [
+        1728.0,
+        1728.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "partition",
+      "workload": "low",
+      "criticality": "optional",
+      "admitted_tasks": 24.0,
+      "admitted_tasks_ci95": [
+        24.0,
+        24.0
+      ],
+      "completed_tasks": 9.57,
+      "completed_tasks_ci95": [
+        9.304732,
+        9.835268
+      ],
+      "task_completion_rate": 0.39875,
+      "task_completion_rate_ci95": [
+        0.387697,
+        0.409803
+      ],
+      "useful_responses": 9.57,
+      "useful_responses_ci95": [
+        9.304732,
+        9.835268
+      ],
+      "denied_tasks": 14.43,
+      "denied_tasks_ci95": [
+        14.164732,
+        14.695268
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 24.0,
+      "dependency_calls_ci95": [
+        24.0,
+        24.0
+      ],
+      "policy_state_reads": 24.0,
+      "policy_state_reads_ci95": [
+        24.0,
+        24.0
+      ],
+      "audit_writes": 24.0,
+      "audit_writes_ci95": [
+        24.0,
+        24.0
+      ],
+      "metadata_bytes": 1728.0,
+      "metadata_bytes_ci95": [
+        1728.0,
+        1728.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "partition",
+      "workload": "low",
+      "criticality": "routine",
+      "admitted_tasks": 24.0,
+      "admitted_tasks_ci95": [
+        24.0,
+        24.0
+      ],
+      "completed_tasks": 9.735,
+      "completed_tasks_ci95": [
+        9.477499,
+        9.992501
+      ],
+      "task_completion_rate": 0.405625,
+      "task_completion_rate_ci95": [
+        0.394896,
+        0.416354
+      ],
+      "useful_responses": 9.735,
+      "useful_responses_ci95": [
+        9.477499,
+        9.992501
+      ],
+      "denied_tasks": 14.265,
+      "denied_tasks_ci95": [
+        14.007499,
+        14.522501
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 24.0,
+      "dependency_calls_ci95": [
+        24.0,
+        24.0
+      ],
+      "policy_state_reads": 24.0,
+      "policy_state_reads_ci95": [
+        24.0,
+        24.0
+      ],
+      "audit_writes": 24.0,
+      "audit_writes_ci95": [
+        24.0,
+        24.0
+      ],
+      "metadata_bytes": 1728.0,
+      "metadata_bytes_ci95": [
+        1728.0,
+        1728.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "partition",
+      "workload": "sustained",
+      "criticality": "critical",
+      "admitted_tasks": 72.0,
+      "admitted_tasks_ci95": [
+        72.0,
+        72.0
+      ],
+      "completed_tasks": 29.315,
+      "completed_tasks_ci95": [
+        28.851142,
+        29.778858
+      ],
+      "task_completion_rate": 0.407153,
+      "task_completion_rate_ci95": [
+        0.40071,
+        0.413595
+      ],
+      "useful_responses": 29.315,
+      "useful_responses_ci95": [
+        28.851142,
+        29.778858
+      ],
+      "denied_tasks": 42.685,
+      "denied_tasks_ci95": [
+        42.221142,
+        43.148858
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 72.0,
+      "dependency_calls_ci95": [
+        72.0,
+        72.0
+      ],
+      "policy_state_reads": 72.0,
+      "policy_state_reads_ci95": [
+        72.0,
+        72.0
+      ],
+      "audit_writes": 72.0,
+      "audit_writes_ci95": [
+        72.0,
+        72.0
+      ],
+      "metadata_bytes": 5184.0,
+      "metadata_bytes_ci95": [
+        5184.0,
+        5184.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "partition",
+      "workload": "sustained",
+      "criticality": "optional",
+      "admitted_tasks": 72.0,
+      "admitted_tasks_ci95": [
+        72.0,
+        72.0
+      ],
+      "completed_tasks": 28.985,
+      "completed_tasks_ci95": [
+        28.506415,
+        29.463585
+      ],
+      "task_completion_rate": 0.402569,
+      "task_completion_rate_ci95": [
+        0.395922,
+        0.409216
+      ],
+      "useful_responses": 28.985,
+      "useful_responses_ci95": [
+        28.506415,
+        29.463585
+      ],
+      "denied_tasks": 43.015,
+      "denied_tasks_ci95": [
+        42.536415,
+        43.493585
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 72.0,
+      "dependency_calls_ci95": [
+        72.0,
+        72.0
+      ],
+      "policy_state_reads": 72.0,
+      "policy_state_reads_ci95": [
+        72.0,
+        72.0
+      ],
+      "audit_writes": 72.0,
+      "audit_writes_ci95": [
+        72.0,
+        72.0
+      ],
+      "metadata_bytes": 5184.0,
+      "metadata_bytes_ci95": [
+        5184.0,
+        5184.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "partition",
+      "workload": "sustained",
+      "criticality": "routine",
+      "admitted_tasks": 72.0,
+      "admitted_tasks_ci95": [
+        72.0,
+        72.0
+      ],
+      "completed_tasks": 28.48,
+      "completed_tasks_ci95": [
+        27.991339,
+        28.968661
+      ],
+      "task_completion_rate": 0.395556,
+      "task_completion_rate_ci95": [
+        0.388769,
+        0.402343
+      ],
+      "useful_responses": 28.48,
+      "useful_responses_ci95": [
+        27.991339,
+        28.968661
+      ],
+      "denied_tasks": 43.52,
+      "denied_tasks_ci95": [
+        43.031339,
+        44.008661
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 72.0,
+      "dependency_calls_ci95": [
+        72.0,
+        72.0
+      ],
+      "policy_state_reads": 72.0,
+      "policy_state_reads_ci95": [
+        72.0,
+        72.0
+      ],
+      "audit_writes": 72.0,
+      "audit_writes_ci95": [
+        72.0,
+        72.0
+      ],
+      "metadata_bytes": 5184.0,
+      "metadata_bytes_ci95": [
+        5184.0,
+        5184.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "recovery_storm",
+      "workload": "burst",
+      "criticality": "critical",
+      "admitted_tasks": 48.0,
+      "admitted_tasks_ci95": [
+        48.0,
+        48.0
+      ],
+      "completed_tasks": 9.525,
+      "completed_tasks_ci95": [
+        9.270341,
+        9.779659
+      ],
+      "task_completion_rate": 0.198437,
+      "task_completion_rate_ci95": [
+        0.193132,
+        0.203743
+      ],
+      "useful_responses": 9.525,
+      "useful_responses_ci95": [
+        9.270341,
+        9.779659
+      ],
+      "denied_tasks": 38.475,
+      "denied_tasks_ci95": [
+        38.220341,
+        38.729659
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 48.0,
+      "dependency_calls_ci95": [
+        48.0,
+        48.0
+      ],
+      "policy_state_reads": 48.0,
+      "policy_state_reads_ci95": [
+        48.0,
+        48.0
+      ],
+      "audit_writes": 48.0,
+      "audit_writes_ci95": [
+        48.0,
+        48.0
+      ],
+      "metadata_bytes": 3456.0,
+      "metadata_bytes_ci95": [
+        3456.0,
+        3456.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "recovery_storm",
+      "workload": "burst",
+      "criticality": "optional",
+      "admitted_tasks": 48.0,
+      "admitted_tasks_ci95": [
+        48.0,
+        48.0
+      ],
+      "completed_tasks": 9.78,
+      "completed_tasks_ci95": [
+        9.499298,
+        10.060702
+      ],
+      "task_completion_rate": 0.20375,
+      "task_completion_rate_ci95": [
+        0.197902,
+        0.209598
+      ],
+      "useful_responses": 9.78,
+      "useful_responses_ci95": [
+        9.499298,
+        10.060702
+      ],
+      "denied_tasks": 38.22,
+      "denied_tasks_ci95": [
+        37.939298,
+        38.500702
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 48.0,
+      "dependency_calls_ci95": [
+        48.0,
+        48.0
+      ],
+      "policy_state_reads": 48.0,
+      "policy_state_reads_ci95": [
+        48.0,
+        48.0
+      ],
+      "audit_writes": 48.0,
+      "audit_writes_ci95": [
+        48.0,
+        48.0
+      ],
+      "metadata_bytes": 3456.0,
+      "metadata_bytes_ci95": [
+        3456.0,
+        3456.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "recovery_storm",
+      "workload": "burst",
+      "criticality": "routine",
+      "admitted_tasks": 48.0,
+      "admitted_tasks_ci95": [
+        48.0,
+        48.0
+      ],
+      "completed_tasks": 9.47,
+      "completed_tasks_ci95": [
+        9.185626,
+        9.754374
+      ],
+      "task_completion_rate": 0.197292,
+      "task_completion_rate_ci95": [
+        0.191367,
+        0.203216
+      ],
+      "useful_responses": 9.47,
+      "useful_responses_ci95": [
+        9.185626,
+        9.754374
+      ],
+      "denied_tasks": 38.53,
+      "denied_tasks_ci95": [
+        38.245626,
+        38.814374
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 48.0,
+      "dependency_calls_ci95": [
+        48.0,
+        48.0
+      ],
+      "policy_state_reads": 48.0,
+      "policy_state_reads_ci95": [
+        48.0,
+        48.0
+      ],
+      "audit_writes": 48.0,
+      "audit_writes_ci95": [
+        48.0,
+        48.0
+      ],
+      "metadata_bytes": 3456.0,
+      "metadata_bytes_ci95": [
+        3456.0,
+        3456.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "recovery_storm",
+      "workload": "low",
+      "criticality": "critical",
+      "admitted_tasks": 24.0,
+      "admitted_tasks_ci95": [
+        24.0,
+        24.0
+      ],
+      "completed_tasks": 8.975,
+      "completed_tasks_ci95": [
+        8.747783,
+        9.202217
+      ],
+      "task_completion_rate": 0.373958,
+      "task_completion_rate_ci95": [
+        0.364491,
+        0.383426
+      ],
+      "useful_responses": 8.975,
+      "useful_responses_ci95": [
+        8.747783,
+        9.202217
+      ],
+      "denied_tasks": 15.025,
+      "denied_tasks_ci95": [
+        14.797783,
+        15.252217
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 24.0,
+      "dependency_calls_ci95": [
+        24.0,
+        24.0
+      ],
+      "policy_state_reads": 24.0,
+      "policy_state_reads_ci95": [
+        24.0,
+        24.0
+      ],
+      "audit_writes": 24.0,
+      "audit_writes_ci95": [
+        24.0,
+        24.0
+      ],
+      "metadata_bytes": 1728.0,
+      "metadata_bytes_ci95": [
+        1728.0,
+        1728.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "recovery_storm",
+      "workload": "low",
+      "criticality": "optional",
+      "admitted_tasks": 24.0,
+      "admitted_tasks_ci95": [
+        24.0,
+        24.0
+      ],
+      "completed_tasks": 9.275,
+      "completed_tasks_ci95": [
+        9.026868,
+        9.523132
+      ],
+      "task_completion_rate": 0.386458,
+      "task_completion_rate_ci95": [
+        0.37612,
+        0.396797
+      ],
+      "useful_responses": 9.275,
+      "useful_responses_ci95": [
+        9.026868,
+        9.523132
+      ],
+      "denied_tasks": 14.725,
+      "denied_tasks_ci95": [
+        14.476868,
+        14.973132
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
+      "dropped_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "peak_queue": 0.0,
+      "peak_queue_ci95": [
+        0.0,
+        0.0
+      ],
+      "backlog_at_end": 0.0,
+      "backlog_at_end_ci95": [
+        0.0,
+        0.0
+      ],
+      "duplicate_executions": 0.0,
+      "duplicate_executions_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_completion_latency": 1.0,
+      "mean_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p50_completion_latency": 1.0,
+      "p50_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p95_completion_latency": 1.0,
+      "p95_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "p99_completion_latency": 1.0,
+      "p99_completion_latency_ci95": [
+        1.0,
+        1.0
+      ],
+      "mean_queue_wait": 0.0,
+      "mean_queue_wait_ci95": [
+        0.0,
+        0.0
+      ],
+      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick_ci95": [
+        0.0,
+        -1.0
+      ],
+      "new_exposure_units": 0.0,
+      "new_exposure_units_ci95": [
+        0.0,
+        0.0
+      ],
+      "availability_induced_exposure_gain": 0.0,
+      "availability_induced_exposure_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "exposure_violation_tasks": 0.0,
+      "exposure_violation_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "fail_open_violation_rate": 0.0,
+      "fail_open_violation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "contaminated_fallback_acceptance": 0.0,
+      "contaminated_fallback_acceptance_ci95": [
+        0.0,
+        0.0
+      ],
+      "silent_budget_reset_indicator": 0.0,
+      "silent_budget_reset_indicator_ci95": [
+        0.0,
+        0.0
+      ],
+      "expired_task_execution_count": 0.0,
+      "expired_task_execution_count_ci95": [
+        0.0,
+        0.0
+      ],
+      "mean_response_quality": 1.0,
+      "mean_response_quality_ci95": [
+        1.0,
+        1.0
+      ],
+      "dependency_calls": 24.0,
+      "dependency_calls_ci95": [
+        24.0,
+        24.0
+      ],
+      "policy_state_reads": 24.0,
+      "policy_state_reads_ci95": [
+        24.0,
+        24.0
+      ],
+      "audit_writes": 24.0,
+      "audit_writes_ci95": [
+        24.0,
+        24.0
+      ],
+      "metadata_bytes": 1728.0,
+      "metadata_bytes_ci95": [
+        1728.0,
+        1728.0
+      ]
+    },
+    {
+      "policy": "hard_deny",
+      "disruption": "recovery_storm",
+      "workload": "low",
+      "criticality": "routine",
+      "admitted_tasks": 24.0,
+      "admitted_tasks_ci95": [
+        24.0,
+        24.0
+      ],
+      "completed_tasks": 8.86,
+      "completed_tasks_ci95": [
+        8.608352,
+        9.111648
+      ],
+      "task_completion_rate": 0.369167,
+      "task_completion_rate_ci95": [
+        0.358681,
+        0.379652
+      ],
+      "useful_responses": 8.86,
+      "useful_responses_ci95": [
+        8.608352,
+        9.111648
+      ],
+      "denied_tasks": 15.14,
+      "denied_tasks_ci95": [
+        14.888352,
+        15.391648
+      ],
+      "timed_out_tasks": 0.0,
+      "timed_out_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "degraded_responses": 0.0,
+      "degraded_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "stale_responses": 0.0,
+      "stale_responses_ci95": [
+        0.0,
+        0.0
+      ],
+      "queued_tasks": 0.0,
+      "queued_tasks_ci95": [
+        0.0,
+        0.0
+      ],
+      "retry_operations": 0.0,
+      "retry_operations_ci95": [
+        0.0,
+        0.0
+      ],
+      "dropped_tasks": 0.0,
       "dropped_tasks_ci95": [
         0.0,
         0.0
