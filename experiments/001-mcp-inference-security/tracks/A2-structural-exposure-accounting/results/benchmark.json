@@ -1,0 +1,256 @@
+{
+  "version": "A2-v0.1",
+  "runs": 1000,
+  "root_seed": 40502,
+  "streams": [
+    "unique",
+    "duplicate-heavy",
+    "precision-escalation",
+    "marginal-scan",
+    "multi-cell-summary",
+    "mixed"
+  ],
+  "checkpoint_rows": 36000,
+  "summary": [
+    {
+      "stream": "duplicate-heavy",
+      "predictor": "request_fraction",
+      "observations": 6000,
+      "pearson": 0.9999991005158367,
+      "spearman": 0.9861380354133039,
+      "calibration_mae": 0.14426456404320992
+    },
+    {
+      "stream": "duplicate-heavy",
+      "predictor": "tuple_coverage",
+      "observations": 6000,
+      "pearson": 0.9999996768492231,
+      "spearman": 0.9861380354133039,
+      "calibration_mae": 0.09533195087448561
+    },
+    {
+      "stream": "duplicate-heavy",
+      "predictor": "cell_coverage",
+      "observations": 6000,
+      "pearson": 0.9999996768492231,
+      "spearman": 0.9861380354133039,
+      "calibration_mae": 0.1444574652777778
+    },
+    {
+      "stream": "duplicate-heavy",
+      "predictor": "marginal_coverage",
+      "observations": 6000,
+      "pearson": 0.5626356099207462,
+      "spearman": 0.7653453601010948,
+      "calibration_mae": 0.6756380208333334
+    },
+    {
+      "stream": "duplicate-heavy",
+      "predictor": "weighted_coverage",
+      "observations": 6000,
+      "pearson": 0.9999996768492232,
+      "spearman": 0.9861380354133039,
+      "calibration_mae": 0.005866608796296257
+    },
+    {
+      "stream": "marginal-scan",
+      "predictor": "request_fraction",
+      "observations": 6000,
+      "pearson": 0.9999986575499935,
+      "spearman": 0.9864746239886606,
+      "calibration_mae": 0.3696376967592593
+    },
+    {
+      "stream": "marginal-scan",
+      "predictor": "tuple_coverage",
+      "observations": 6000,
+      "pearson": 0.9999986575499936,
+      "spearman": 0.9864746239886606,
+      "calibration_mae": 0.023958684413580247
+    },
+    {
+      "stream": "marginal-scan",
+      "predictor": "cell_coverage",
+      "observations": 6000,
+      "pearson": 0.9999986575499935,
+      "spearman": 0.9864746239886606,
+      "calibration_mae": 0.03630436342592593
+    },
+    {
+      "stream": "marginal-scan",
+      "predictor": "marginal_coverage",
+      "observations": 6000,
+      "pearson": 0.7655383177719951,
+      "spearman": 0.9157788741424553,
+      "calibration_mae": 0.5867372337962963
+    },
+    {
+      "stream": "marginal-scan",
+      "predictor": "weighted_coverage",
+      "observations": 6000,
+      "pearson": 0.9999986575499936,
+      "spearman": 0.9864746239886606,
+      "calibration_mae": 0.0014734143518518419
+    },
+    {
+      "stream": "mixed",
+      "predictor": "request_fraction",
+      "observations": 6000,
+      "pearson": 0.9926465356941104,
+      "spearman": 0.9859610968693276,
+      "calibration_mae": 0.07751762538580248
+    },
+    {
+      "stream": "mixed",
+      "predictor": "tuple_coverage",
+      "observations": 6000,
+      "pearson": 0.9926465356941104,
+      "spearman": 0.9859610968693276,
+      "calibration_mae": 0.07751762538580248
+    },
+    {
+      "stream": "mixed",
+      "predictor": "cell_coverage",
+      "observations": 6000,
+      "pearson": 0.9879888845962894,
+      "spearman": 0.9936663015124088,
+      "calibration_mae": 0.20064237847222224
+    },
+    {
+      "stream": "mixed",
+      "predictor": "marginal_coverage",
+      "observations": 6000,
+      "pearson": 0.5785058376262833,
+      "spearman": 0.7215635839204771,
+      "calibration_mae": 0.6127401793981482
+    },
+    {
+      "stream": "mixed",
+      "predictor": "weighted_coverage",
+      "observations": 6000,
+      "pearson": 0.9993998632230002,
+      "spearman": 0.9950558424101027,
+      "calibration_mae": 0.0382525810185185
+    },
+    {
+      "stream": "multi-cell-summary",
+      "predictor": "request_fraction",
+      "observations": 6000,
+      "pearson": 0.9976309354445897,
+      "spearman": 0.9861479049537598,
+      "calibration_mae": 0.2771622048611111
+    },
+    {
+      "stream": "multi-cell-summary",
+      "predictor": "tuple_coverage",
+      "observations": 6000,
+      "pearson": 0.9976309354445896,
+      "spearman": 0.9861479049537598,
+      "calibration_mae": 0.11789952353395063
+    },
+    {
+      "stream": "multi-cell-summary",
+      "predictor": "cell_coverage",
+      "observations": 6000,
+      "pearson": 0.9976309354445897,
+      "spearman": 0.9861479049537598,
+      "calibration_mae": 0.2771622048611111
+    },
+    {
+      "stream": "multi-cell-summary",
+      "predictor": "marginal_coverage",
+      "observations": 6000,
+      "pearson": 0.8514371922799636,
+      "spearman": 0.9500284363841803,
+      "calibration_mae": 0.6824399826388889
+    },
+    {
+      "stream": "multi-cell-summary",
+      "predictor": "weighted_coverage",
+      "observations": 6000,
+      "pearson": 0.9976309354445897,
+      "spearman": 0.9861479049537598,
+      "calibration_mae": 0.05617112847222222
+    },
+    {
+      "stream": "precision-escalation",
+      "predictor": "request_fraction",
+      "observations": 6000,
+      "pearson": 0.9999966649969979,
+      "spearman": 0.9860188742587417,
+      "calibration_mae": 0.035379569830246906
+    },
+    {
+      "stream": "precision-escalation",
+      "predictor": "tuple_coverage",
+      "observations": 6000,
+      "pearson": 0.9999965327245148,
+      "spearman": 0.9860188742587417,
+      "calibration_mae": 0.013553043338477394
+    },
+    {
+      "stream": "precision-escalation",
+      "predictor": "cell_coverage",
+      "observations": 6000,
+      "pearson": 0.9999965327245147,
+      "spearman": 0.9860188742587417,
+      "calibration_mae": 0.03557247106481481
+    },
+    {
+      "stream": "precision-escalation",
+      "predictor": "marginal_coverage",
+      "observations": 6000,
+      "pearson": 0.5630905533140874,
+      "spearman": 0.7643050676255196,
+      "calibration_mae": 0.5667530266203704
+    },
+    {
+      "stream": "precision-escalation",
+      "predictor": "weighted_coverage",
+      "observations": 6000,
+      "pearson": 0.9999967314162077,
+      "spearman": 0.9860188742587417,
+      "calibration_mae": 0.008779380787037059
+    },
+    {
+      "stream": "unique",
+      "predictor": "request_fraction",
+      "observations": 6000,
+      "pearson": 0.9999993988296442,
+      "spearman": 0.9891412790065678,
+      "calibration_mae": 0.039393802083333325
+    },
+    {
+      "stream": "unique",
+      "predictor": "tuple_coverage",
+      "observations": 6000,
+      "pearson": 0.9999993988296442,
+      "spearman": 0.9891412790065678,
+      "calibration_mae": 0.009731712319958877
+    },
+    {
+      "stream": "unique",
+      "predictor": "cell_coverage",
+      "observations": 6000,
+      "pearson": 0.9999993988296442,
+      "spearman": 0.9891412790065678,
+      "calibration_mae": 0.039393802083333325
+    },
+    {
+      "stream": "unique",
+      "predictor": "marginal_coverage",
+      "observations": 6000,
+      "pearson": 0.5626258916106616,
+      "spearman": 0.7669154497864544,
+      "calibration_mae": 0.5705743576388889
+    },
+    {
+      "stream": "unique",
+      "predictor": "weighted_coverage",
+      "observations": 6000,
+      "pearson": 0.9999993988296441,
+      "spearman": 0.9891412790065678,
+      "calibration_mae": 0.004819160879629654
+    }
+  ]
+}
