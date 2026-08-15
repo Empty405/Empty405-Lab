@@ -1,0 +1,75 @@
+{
+  "engine_version": "0.1",
+  "research": {
+    "id": "001",
+    "track": "A4",
+    "title": "Security–Utility Trade-off",
+    "slug": "security-utility-trade-off",
+    "status": "designed"
+  },
+  "question": "Which disclosure-policy configurations lie on the Pareto frontier across reconstruction risk, legitimate utility, availability, and accounting cost?",
+  "raw_idea": "Compare security controls without pretending that maximum denial is a useful security solution.",
+  "initial_claim": "Different policies occupy different security-utility trade-off regions.",
+  "narrowed_claim": "A unified paired benchmark can identify non-dominated and robustly dominated tested configurations without hiding task weights in one score.",
+  "hypothesis": "Frontier membership will depend on task mix and deadline, while some configurations remain dominated across most declared profiles.",
+  "prior_art": [],
+  "strongest_objections": [
+    "Pareto results depend on selected metrics and configurations.",
+    "Task weights may encode the desired conclusion.",
+    "Toy latency and storage costs may be meaningless.",
+    "A1–A3 mechanisms may not be comparable in one harness."
+  ],
+  "falsification": {
+    "criteria": [
+      "Frontier membership is unstable across seeds and small specification changes.",
+      "Workloads give policies unequal opportunities.",
+      "One metric silently controls every result.",
+      "Operational measurements are not reproducible."
+    ]
+  },
+  "success_criteria": [
+    "Every policy uses identical paired trials.",
+    "Dominance explanations are machine-readable.",
+    "Stable and weight-sensitive conclusions are separated.",
+    "Deadline and task-profile frontiers are reported independently."
+  ],
+  "experiment": {
+    "plan": "Run a unified parameter grid for baseline, rate, quota, coverage, hybrid, and adaptive policies across six workloads and four deadline conditions.",
+    "metrics": [
+      "interval reduction",
+      "exact recovery",
+      "macro utility",
+      "minimum-task utility",
+      "p95 delay",
+      "deadline success",
+      "ledger bytes",
+      "evaluation time",
+      "frontier stability"
+    ],
+    "results_path": "experiments/001-mcp-inference-security/tracks/A4-security-utility-trade-off/results"
+  },
+  "reproducibility": {
+    "command": "python experiments/001-mcp-inference-security/tracks/A4-security-utility-trade-off/benchmark.py",
+    "seed": 40504,
+    "environment": "Pending implementation"
+  },
+  "review": {
+    "outcome": "pending",
+    "limitations": [
+      "Synthetic workloads",
+      "Tested configurations only",
+      "Toy operational costs",
+      "Stable single principal"
+    ],
+    "claim_audit": [
+      "No policy family is declared dominated from one configuration.",
+      "Task weights remain explicit.",
+      "A1–A3 published summaries are not mixed without unified reruns."
+    ]
+  },
+  "next_questions": [
+    "Which configurations are robustly dominated?",
+    "When does rate limiting enter the frontier?",
+    "Which task profiles make adaptive disclosure non-dominated?"
+  ]
+}
