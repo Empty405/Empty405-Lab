@@ -1,35 +1,50 @@
 # C5 — Fair allocation between clients
 
 **Program:** `001-mcp-inference-security`  
-**Track:** C  
+**Track:** C — Shared-budget problem  
 **Module:** C5  
-**Status:** Scaffold / not yet researched
+**Status:** Experiment design v0.1
 
 ## Простими словами
 
-Порівнює правила справедливого розподілу бюджету між різними клієнтами.
+Навіть без зловмисника один shared disclosure budget створює конфлікт: активний або “дорогий” клієнт може отримати більшість нової інформації, а інший — майже нічого. C5 перевіряє, яке правило розподілу зберігає корисність, не допускає starvation і не створює прихований додатковий exposure.
 
-## Початкове дослідницьке питання
+## Дослідницьке питання
 
-> За яких умов цей механізм або проблема реально змінює безпеку, реконструкцію інформації, корисність чи вартість системи?
+> Як allocation policies змінюють legitimate utility, starvation, utilization і exposure conservation, коли клієнти мають різний попит, marginal exposure cost, task value та burst timing, але всі вважаються легітимними?
 
-## Межі модуля
+## Гіпотеза
 
-Цей файл поки є карткою-навігатором, а не готовим науковим висновком. Перед експериментом тут потрібно окремо записати припущення, те, що модуль не досліджує, залежності від інших треків і критерії зупинки.
+Global FIFO максимізує простоту й часто utilization, але чутливий до arrival order і може створювати starvation. Equal reservation захищає мінімальну частку, але втрачає capacity при нерівному попиті. Weighted fair allocation і bounded borrowing повинні краще балансувати minimum guarantees та utilization, однак їхній результат залежить від правильності weights і точності marginal-cost accounting.
 
-## Майбутня структура дослідження
+## Нульова гіпотеза
 
-- `README.md` — питання, гіпотеза, межі та поточний статус;
-- `architecture.md` — компоненти, потоки даних і trust boundaries;
-- `related-work.md` — попередні роботи та джерела;
-- `experiment-design.md` — змінні, контролі, сценарії та процедура;
-- `metrics.md` — формули, одиниці й інваріанти;
-- `falsification.md` — результат, який послабить або спростує гіпотезу;
-- `results/` — сирі результати, таблиці й графіки після запуску.
+Після вирівнювання request set, cap, task value та arrival schedule allocation rule не створює практично значущої різниці в legitimate utility або starvation, або будь-яке покращення fairness повністю пояснюється більшим невикористаним бюджетом чи додатковим exposure.
+
+## Одиниця аналізу
+
+Один **multi-client allocation episode**: 120 ticks, фіксований набір легітимних principals, один exact shared ledger/cap, heterogeneous requests, allocation policy та terminal outcomes. Evaluator знає task value і counterfactual feasible allocation; deployable policies бачать лише дозволені metadata.
+
+## Межі
+
+C5 досліджує:
+
+- усіх клієнтів як легітимних;
+- steady, bursty, asymmetric і sparse demand;
+- equal, weighted, max-min, proportional, bounded-borrowing та FIFO allocation;
+- utility, starvation, envy, utilization і cap conservation;
+- sensitivity до помилково заданих weights.
+
+C5 не моделює malicious burning (C4), identity/Sybil failure (B), budget decay (C6), semantic observer error (D) або юридичні правила пріоритету. Synthetic task value не є реальною соціальною цінністю.
+
+## Артефакти v0.1
+
+- `architecture.md` — principals, allocator, ledger і trust boundaries;
+- `experiment-design.md` — paired matrix, demand profiles, controls і stop conditions;
+- `metrics.md` — utility, starvation, fairness, envy, utilization і cost;
+- `falsification.md` — докази проти гіпотези та критичні контрприклади;
+- `related-work.md` — план source-backed порівняння fairness mechanisms.
 
 ## Наступний крок
 
-1. Пояснити проблему одним конкретним прикладом.
-2. Сформулювати вузьку гіпотезу й нульову гіпотезу.
-3. Визначити, що буде доказом проти нашої ідеї.
-4. Лише після цього проєктувати експеримент і писати код.
+Реалізувати детермінований benchmark із raw request events, counterfactual controls, invariant tests і utility–fairness–utilization frontier.
