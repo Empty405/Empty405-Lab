@@ -46,6 +46,26 @@ class ResearchToolsTests(unittest.TestCase):
             self.assertEqual(report["raw_rows"], 2)
             self.assertEqual(len(report["sha256"]["trials.csv.gz"]), 64)
 
+    def test_integrity_checks_multiple_raw_artifacts_independently(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            results = self.fixture(Path(tmp))
+            metadata_path = results / "benchmark.json"
+            metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+            metadata["task_event_rows"] = 3
+            metadata_path.write_text(json.dumps(metadata), encoding="utf-8")
+            with gzip.open(results / "task-events.csv.gz", "wt", newline="", encoding="utf-8") as handle:
+                writer = csv.writer(handle)
+                writer.writerow(["event"])
+                writer.writerows([[1], [2], [3]])
+
+            report = integrity_checker.validate_results_dir(results)
+
+            self.assertEqual(report["raw_rows"], 5)
+            self.assertEqual(
+                report["declared_raw_files"],
+                {"task-events.csv.gz": 3, "trials.csv.gz": 2},
+            )
+
     def test_integrity_rejects_row_mismatch(self):
         with tempfile.TemporaryDirectory() as tmp:
             with self.assertRaisesRegex(RuntimeError, "row mismatch"):
