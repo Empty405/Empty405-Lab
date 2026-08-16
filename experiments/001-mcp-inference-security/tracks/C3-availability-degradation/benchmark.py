@@ -71,6 +71,28 @@ FIELDS = (
     "audit_writes",
     "metadata_bytes",
 )
+EVENT_FIELDS = (
+    "trial",
+    "policy",
+    "disruption",
+    "workload",
+    "criticality",
+    "task_id",
+    "arrival_tick",
+    "deadline_tick",
+    "terminal_tick",
+    "terminal_outcome",
+    "response_kind",
+    "response_quality",
+    "minimum_quality",
+    "completed",
+    "first_response_latency",
+    "completion_latency",
+    "queue_wait",
+    "retry_count",
+    "exposure_violation",
+    "new_exposure_units",
+)
 
 
 @dataclass(frozen=True)
@@ -114,6 +136,17 @@ def dependency_state(disruption: str, tick: int) -> tuple[bool, int, int]:
     return True, 1, 2 if 65 <= tick < 90 else 8
 
 
+def final_recovery_tick(disruption: str) -> int | None:
+    """Return the final unavailable-to-available transition in the episode."""
+    transitions = []
+    for tick in range(1, TICKS):
+        previous_available = dependency_state(disruption, tick - 1)[0]
+        available = dependency_state(disruption, tick)[0]
+        if not previous_available and available:
+            transitions.append(tick)
+    return transitions[-1] if transitions else None
+
+
 def generate_tasks(workload: str, criticality: str, rng: random.Random) -> list[Task]:
     counts = {"low": 24, "burst": 48, "sustained": 72}
     count = counts[workload]
@@ -155,7 +188,9 @@ def response_for(task: Task, policy: str, available: bool) -> tuple[str, float, 
     return ("exact", 1.0, {task.unit}) if available and old else ("deny", 0.0, set())
 
 
-def simulate_trial(policy: str, disruption: str, workload: str, criticality: str, trial: int) -> dict[str, object]:
+def simulate_episode(
+    policy: str, disruption: str, workload: str, criticality: str, trial: int
+) -> tuple[dict[str, object], list[dict[str, object]]]:
     rng = random.Random(stable_seed(disruption, workload, criticality, trial))
     tasks = generate_tasks(workload, criticality, rng)
     arrivals: dict[int, list[Task]] = defaultdict(list)
@@ -173,25 +208,71 @@ def simulate_trial(policy: str, disruption: str, workload: str, criticality: str
     violation_tasks = contaminated = expired_executions = 0
     dependency_calls = policy_reads = audit_writes = 0
     recovery_completion_tick = -1
+    recovery_start = final_recovery_tick(disruption)
+    task_events: dict[int, dict[str, object]] = {
+        task.task_id: {
+            "trial": trial,
+            "policy": policy,
+            "disruption": disruption,
+            "workload": workload,
+            "criticality": criticality,
+            "task_id": task.task_id,
+            "arrival_tick": task.arrival,
+            "deadline_tick": task.deadline,
+            "terminal_tick": -1,
+            "terminal_outcome": "",
+            "response_kind": "",
+            "response_quality": 0.0,
+            "minimum_quality": task.minimum_quality,
+            "completed": 0,
+            "first_response_latency": -1,
+            "completion_latency": -1,
+            "queue_wait": 0,
+            "retry_count": 0,
+            "exposure_violation": 0,
+            "new_exposure_units": 0,
+        }
+        for task in tasks
+    }
 
-    def finish(task: Task, tick: int, kind: str, quality: float, exposed: set[int], admitted: int) -> None:
+    def finish(
+        task: Task,
+        tick: int,
+        kind: str,
+        quality: float,
+        exposed: set[int],
+        admitted: int,
+        retry_count: int = 0,
+        was_queued: bool = False,
+    ) -> None:
         nonlocal completed, useful, denied, degraded, stale, violation_tasks, contaminated
         if task.task_id in terminal:
             raise AssertionError("logical task executed twice")
         terminal.add(task.task_id)
+        event = task_events[task.task_id]
+        event["terminal_tick"] = tick
+        event["response_kind"] = kind
+        event["response_quality"] = quality
+        event["first_response_latency"] = tick - task.arrival + 1
+        event["retry_count"] = retry_count
+        if was_queued:
+            wait = tick - admitted
+            queue_waits.append(wait)
+            event["queue_wait"] = wait
         if kind == "deny":
             denied += 1
+            event["terminal_outcome"] = "denied"
             return
         unauthorized_units = exposed - PRECHARGED_UNITS
         new_units = exposed - released_union
         if unauthorized_units:
             violation_tasks += 1
+            event["exposure_violation"] = 1
+        event["new_exposure_units"] = len(new_units)
         if kind == "degraded" and unauthorized_units:
             contaminated += 1
         released_union.update(exposed)
         response_qualities.append(quality)
-        if admitted != task.arrival:
-            queue_waits.append(tick - admitted)
         if kind in ("degraded", "snapshot"):
             degraded += 1
         if kind == "snapshot":
@@ -199,7 +280,13 @@ def simulate_trial(policy: str, disruption: str, workload: str, criticality: str
         if quality >= task.minimum_quality:
             completed += 1
             useful += 1
-            completion_latencies.append(tick - task.arrival + 1)
+            latency = tick - task.arrival + 1
+            completion_latencies.append(latency)
+            event["terminal_outcome"] = "completed"
+            event["completed"] = 1
+            event["completion_latency"] = latency
+        else:
+            event["terminal_outcome"] = "insufficient_quality"
 
     for tick in range(TICKS):
         available, decision_latency, capacity = dependency_state(disruption, tick)
@@ -215,6 +302,11 @@ def simulate_trial(policy: str, disruption: str, workload: str, criticality: str
                     terminal.add(task.task_id)
                     dropped += 1
                     denied += 1
+                    event = task_events[task.task_id]
+                    event["terminal_tick"] = tick
+                    event["terminal_outcome"] = "dropped"
+                    event["response_kind"] = "deny"
+                    event["first_response_latency"] = tick - task.arrival + 1
                 continue
             kind, quality, exposed = response_for(task, policy, available)
             finish(task, min(task.deadline, tick + decision_latency - 1), kind, quality, exposed, tick)
@@ -231,6 +323,15 @@ def simulate_trial(policy: str, disruption: str, workload: str, criticality: str
                     terminal.add(task.task_id)
                     timed_out += 1
                     audit_writes += 1
+                    wait = tick - admitted
+                    queue_waits.append(wait)
+                    event = task_events[task.task_id]
+                    event["terminal_tick"] = tick
+                    event["terminal_outcome"] = "timed_out"
+                    event["response_kind"] = "timeout"
+                    event["first_response_latency"] = tick - task.arrival + 1
+                    event["queue_wait"] = wait
+                    event["retry_count"] = retry_count
                     continue
                 if not available or processed >= capacity:
                     if tick > admitted and (tick - admitted) % 3 == 0:
@@ -241,18 +342,33 @@ def simulate_trial(policy: str, disruption: str, workload: str, criticality: str
                 dependency_calls += 1
                 policy_reads += 1
                 kind, quality, exposed = response_for(task, policy, True)
-                finish(task, tick, kind, quality, exposed, admitted)
+                finish(task, tick, kind, quality, exposed, admitted, retry_count, True)
                 audit_writes += 1
                 processed += 1
             queue = survivors
-            if disruption != "healthy" and tick >= 65 and not queue and recovery_completion_tick < 0:
-                recovery_completion_tick = tick
+        if (
+            policy == "bounded_queue_retry"
+            and recovery_start is not None
+            and tick >= recovery_start
+            and not queue
+            and recovery_completion_tick < 0
+        ):
+            recovery_completion_tick = tick
 
-    for task, _admitted, _retry_count in queue:
+    for task, admitted, retry_count in queue:
         if task.task_id not in terminal:
             terminal.add(task.task_id)
             timed_out += 1
             audit_writes += 1
+            wait = TICKS - 1 - admitted
+            queue_waits.append(wait)
+            event = task_events[task.task_id]
+            event["terminal_tick"] = TICKS - 1
+            event["terminal_outcome"] = "timed_out"
+            event["response_kind"] = "timeout"
+            event["first_response_latency"] = TICKS - task.arrival
+            event["queue_wait"] = wait
+            event["retry_count"] = retry_count
 
     if len(terminal) != len(tasks):
         raise AssertionError("every admitted task must have one terminal outcome")
@@ -260,7 +376,7 @@ def simulate_trial(policy: str, disruption: str, workload: str, criticality: str
     mean_latency = sum(completion_latencies) / len(completion_latencies) if completion_latencies else 0.0
     mean_wait = sum(queue_waits) / len(queue_waits) if queue_waits else 0.0
     mean_quality = sum(response_qualities) / len(response_qualities) if response_qualities else 0.0
-    return {
+    row = {
         "trial": trial,
         "policy": policy,
         "disruption": disruption,
@@ -300,6 +416,15 @@ def simulate_trial(policy: str, disruption: str, workload: str, criticality: str
         "audit_writes": audit_writes,
         "metadata_bytes": (dependency_calls + policy_reads + audit_writes) * 24,
     }
+    events = [task_events[task.task_id] for task in tasks]
+    if any(event["terminal_tick"] == -1 for event in events):
+        raise AssertionError("every task event must record a terminal tick")
+    return row, events
+
+
+def simulate_trial(policy: str, disruption: str, workload: str, criticality: str, trial: int) -> dict[str, object]:
+    row, _events = simulate_episode(policy, disruption, workload, criticality, trial)
+    return row
 
 
 def mean_ci(values: list[float]) -> tuple[float, float, float]:
@@ -316,32 +441,48 @@ def run(trials: int, output_dir: Path) -> dict[str, object]:
     groups: dict[tuple[str, ...], dict[str, list[float]]] = defaultdict(lambda: defaultdict(list))
     rows = 0
     metric_fields = FIELDS[6:]
-    with gzip.open(output_dir / "trials.csv.gz", "wt", newline="", encoding="utf-8") as handle:
+    event_rows = 0
+    with (
+        gzip.open(output_dir / "trials.csv.gz", "wt", newline="", encoding="utf-8") as handle,
+        gzip.open(output_dir / "task-events.csv.gz", "wt", newline="", encoding="utf-8") as event_handle,
+    ):
         writer = csv.DictWriter(handle, fieldnames=FIELDS)
+        event_writer = csv.DictWriter(event_handle, fieldnames=EVENT_FIELDS)
         writer.writeheader()
+        event_writer.writeheader()
         for policy in POLICIES:
             for disruption in DISRUPTIONS:
                 for workload in WORKLOADS:
                     for criticality in CRITICALITY:
                         key = (policy, disruption, workload, criticality)
                         for trial in range(trials):
-                            row = simulate_trial(policy, disruption, workload, criticality, trial)
+                            row, events = simulate_episode(policy, disruption, workload, criticality, trial)
                             writer.writerow(row)
+                            event_writer.writerows(events)
                             rows += 1
+                            event_rows += len(events)
                             for metric in metric_fields:
                                 groups[key][metric].append(float(row[metric]))
     summaries = []
     for key, metrics in groups.items():
         item = dict(zip(("policy", "disruption", "workload", "criticality"), key))
         for metric, values in metrics.items():
-            mean, low, high = mean_ci(values)
-            item[metric] = round(mean, 6)
-            item[f"{metric}_ci95"] = [round(low, 6), round(high, 6)]
+            valid_values = [value for value in values if value >= 0] if metric == "recovery_completion_tick" else values
+            if not valid_values:
+                item[metric] = None
+                item[f"{metric}_ci95"] = [None, None]
+            else:
+                mean, low, high = mean_ci(valid_values)
+                item[metric] = round(mean, 6)
+                item[f"{metric}_ci95"] = [round(low, 6), round(high, 6)]
+            if metric == "recovery_completion_tick":
+                item["recovery_completion_tick_observations"] = len(valid_values)
         summaries.append(item)
     result = {
-        "schema_version": "c3.v0.1",
+        "schema_version": "c3.v0.2",
         "root_seed": ROOT_SEED,
         "trial_rows": rows,
+        "task_event_rows": event_rows,
         "trials_per_configuration": trials,
         "configurations": len(groups),
         "episode_ticks": TICKS,

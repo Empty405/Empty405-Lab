@@ -2,9 +2,10 @@
 
 ## Run identity
 
-- Schema: `c3.v0.1`
+- Schema: `c3.v0.2`
 - Root seed: `40523`
 - Raw rows: **63,000**
+- Raw task events: **3,024,000**
 - Configurations: **315**
 - Trials per configuration: **200**
 - Episode length: **120 ticks**
@@ -26,7 +27,7 @@ The simulation supports the narrow claim that prior-exposure-aware fallbacks can
 | Fail-open | 0.7123 | 0.0485 | 0.1125 | 13.8197 | 0.0000 | 1.8000 | 0.0000 | 1.0000 |
 | Oracle | 0.7334 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 1.7999 | 0.0000 | 0.7799 |
 
-Completion is useful completion at the task-specific synthetic quality threshold. Low-quality snapshot or degraded replies remain terminal responses but are not mislabeled as completed tasks. Latency percentiles use useful completions only; timeouts remain separate terminal outcomes.
+Completion is useful completion at the task-specific synthetic quality threshold. Low-quality snapshot or degraded replies remain terminal responses but are not mislabeled as completed tasks. Latency percentiles use useful completions only; timeouts remain separate terminal outcomes. The published task-event artifact preserves every task's ID, arrival, deadline, terminal tick, outcome, latency, queue wait, retries and exposure status so these distributions can be recomputed rather than trusted as pre-aggregated values.
 
 ## Interpretation
 
@@ -36,7 +37,7 @@ Graceful degradation and the oracle coincide because both can select the same ex
 
 ### Queue and recovery
 
-Queue/retry protects the exposure cap, but its mean p95 completion latency rises to `5.3263` ticks and it times out `6.4889` tasks per episode on average. This supports the directional recovery-storm concern: postponing decisions can convert dependency failure into backlog and missed deadlines.
+Queue/retry protects the exposure cap, but its mean p95 completion latency rises to `5.3263` ticks, its mean wait among queued terminal tasks is `5.7828` ticks, and it times out `6.4889` tasks per episode on average. Recovery completion is measured only after the final unavailable-to-available transition in each disruption schedule; configurations with no recovery observation are represented as missing rather than the `-1` sentinel entering confidence intervals. This supports the directional recovery-storm concern: postponing decisions can convert dependency failure into backlog and missed deadlines.
 
 ### Fail-open
 

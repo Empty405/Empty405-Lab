@@ -1,7 +1,8 @@
 {
-  "schema_version": "c3.v0.1",
+  "schema_version": "c3.v0.2",
   "root_seed": 40523,
   "trial_rows": 63000,
+  "task_event_rows": 3024000,
   "trials_per_configuration": 200,
   "configurations": 315,
   "episode_ticks": 120,
@@ -114,11 +115,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -280,11 +282,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -446,11 +449,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -612,11 +616,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -778,11 +783,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -944,11 +950,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -1110,11 +1117,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -1276,11 +1284,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -1442,11 +1451,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -1603,16 +1613,17 @@
         1.0,
         1.0
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 19.0,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        19.0,
+        19.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": 70.0,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        70.0,
+        70.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -1769,16 +1780,17 @@
         1.0,
         1.0
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 9.0,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        9.0,
+        9.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": 70.0,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        70.0,
+        70.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -1935,16 +1947,17 @@
         1.0,
         1.0
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 13.0,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        13.0,
+        13.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": 70.0,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        70.0,
+        70.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -2101,16 +2114,17 @@
         12.625896,
         13.754104
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 14.7,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        14.7,
+        14.7
       ],
       "recovery_completion_tick": 70.0,
       "recovery_completion_tick_ci95": [
         70.0,
         70.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -2267,16 +2281,17 @@
         4.909318,
         5.550682
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 8.0,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        8.0,
+        8.0
       ],
       "recovery_completion_tick": 70.0,
       "recovery_completion_tick_ci95": [
         70.0,
         70.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -2433,16 +2448,17 @@
         8.346789,
         9.253211
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 10.9,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        10.9,
+        10.9
       ],
       "recovery_completion_tick": 70.0,
       "recovery_completion_tick_ci95": [
         70.0,
         70.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -2599,16 +2615,17 @@
         17.10123,
         17.47877
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 14.827586,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        14.827586,
+        14.827586
       ],
       "recovery_completion_tick": 72.0,
       "recovery_completion_tick_ci95": [
         72.0,
         72.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -2765,16 +2782,17 @@
         7.583372,
         8.066628
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 8.034483,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        8.034483,
+        8.034483
       ],
       "recovery_completion_tick": 70.0,
       "recovery_completion_tick_ci95": [
         70.0,
         70.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -2931,16 +2949,17 @@
         11.741705,
         12.158295
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 11.034483,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        11.034483,
+        11.034483
       ],
       "recovery_completion_tick": 71.0,
       "recovery_completion_tick_ci95": [
         71.0,
         71.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -3097,16 +3116,17 @@
         9.960548,
         9.999452
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 7.5,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        7.5,
+        7.5
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": 84.0,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        84.0,
+        84.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -3263,16 +3283,17 @@
         9.0,
         9.0
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 7.5,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        7.5,
+        7.5
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": 84.0,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        84.0,
+        84.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -3429,16 +3450,17 @@
         9.932773,
         9.987227
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 7.5,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        7.5,
+        7.5
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": 84.0,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        84.0,
+        84.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -3595,16 +3617,17 @@
         6.408806,
         6.641194
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 3.5,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        3.5,
+        3.5
       ],
-      "recovery_completion_tick": 72.0,
+      "recovery_completion_tick": 84.0,
       "recovery_completion_tick_ci95": [
-        72.0,
-        72.0
+        84.0,
+        84.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -3761,16 +3784,17 @@
         6.468215,
         6.651785
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 3.5,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        3.5,
+        3.5
       ],
-      "recovery_completion_tick": 72.0,
+      "recovery_completion_tick": 84.0,
       "recovery_completion_tick_ci95": [
-        72.0,
-        72.0
+        84.0,
+        84.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -3927,16 +3951,17 @@
         6.437931,
         6.622069
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 3.5,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        3.5,
+        3.5
       ],
-      "recovery_completion_tick": 72.0,
+      "recovery_completion_tick": 84.0,
       "recovery_completion_tick_ci95": [
-        72.0,
-        72.0
+        84.0,
+        84.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -4093,16 +4118,17 @@
         6.939466,
         6.990534
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 3.375,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        3.375,
+        3.375
       ],
-      "recovery_completion_tick": 72.0,
+      "recovery_completion_tick": 85.0,
       "recovery_completion_tick_ci95": [
-        72.0,
-        72.0
+        85.0,
+        85.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -4259,16 +4285,17 @@
         6.942526,
         6.997474
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 3.375,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        3.375,
+        3.375
       ],
-      "recovery_completion_tick": 72.0,
+      "recovery_completion_tick": 85.0,
       "recovery_completion_tick_ci95": [
-        72.0,
-        72.0
+        85.0,
+        85.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -4425,16 +4452,17 @@
         6.960548,
         6.999452
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 3.375,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        3.375,
+        3.375
       ],
-      "recovery_completion_tick": 72.0,
+      "recovery_completion_tick": 85.0,
       "recovery_completion_tick_ci95": [
-        72.0,
-        72.0
+        85.0,
+        85.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -4591,16 +4619,17 @@
         1.0,
         1.0
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 19.0,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        19.0,
+        19.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": 65.0,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        65.0,
+        65.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -4757,16 +4786,17 @@
         1.0,
         1.0
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 9.0,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        9.0,
+        9.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": 65.0,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        65.0,
+        65.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -4923,16 +4953,17 @@
         1.0,
         1.0
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 13.0,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        13.0,
+        13.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": 65.0,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        65.0,
+        65.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -5089,16 +5120,17 @@
         16.040856,
         17.029144
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 14.222222,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        14.222222,
+        14.222222
       ],
       "recovery_completion_tick": 67.0,
       "recovery_completion_tick_ci95": [
         67.0,
         67.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -5255,16 +5287,17 @@
         4.086139,
         4.683861
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 7.666667,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        7.666667,
+        7.666667
       ],
       "recovery_completion_tick": 65.0,
       "recovery_completion_tick_ci95": [
         65.0,
         65.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -5421,16 +5454,17 @@
         8.101984,
         8.998016
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 10.555556,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        10.555556,
+        10.555556
       ],
       "recovery_completion_tick": 66.0,
       "recovery_completion_tick_ci95": [
         66.0,
         66.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -5587,16 +5621,17 @@
         18.230681,
         18.469319
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 15.56,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        15.56,
+        15.56
       ],
       "recovery_completion_tick": 71.0,
       "recovery_completion_tick_ci95": [
         71.0,
         71.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -5753,16 +5788,17 @@
         8.24217,
         8.52783
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 8.2,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        8.2,
+        8.2
       ],
       "recovery_completion_tick": 67.0,
       "recovery_completion_tick_ci95": [
         67.0,
         67.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -5919,16 +5955,17 @@
         12.269546,
         12.550454
       ],
-      "mean_queue_wait": 0.0,
+      "mean_queue_wait": 11.4,
       "mean_queue_wait_ci95": [
-        0.0,
-        0.0
+        11.4,
+        11.4
       ],
       "recovery_completion_tick": 69.0,
       "recovery_completion_tick_ci95": [
         69.0,
         69.0
       ],
+      "recovery_completion_tick_observations": 200,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -6090,11 +6127,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -6256,11 +6294,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -6422,11 +6461,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -6588,11 +6628,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -6754,11 +6795,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -6920,11 +6962,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -7086,11 +7129,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -7252,11 +7296,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -7418,11 +7463,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -7584,11 +7630,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -7750,11 +7797,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -7916,11 +7964,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -8082,11 +8131,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -8248,11 +8298,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -8414,11 +8465,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -8580,11 +8632,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -8746,11 +8799,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -8912,11 +8966,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -9078,11 +9133,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 11.485,
       "new_exposure_units_ci95": [
         11.141286,
@@ -9244,11 +9300,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 11.04,
       "new_exposure_units_ci95": [
         10.707458,
@@ -9410,11 +9467,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 11.35,
       "new_exposure_units_ci95": [
         11.042834,
@@ -9576,11 +9634,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 3.945,
       "new_exposure_units_ci95": [
         3.742605,
@@ -9742,11 +9801,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 3.86,
       "new_exposure_units_ci95": [
         3.663489,
@@ -9908,11 +9968,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 4.015,
       "new_exposure_units_ci95": [
         3.804525,
@@ -10074,11 +10135,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 10.225,
       "new_exposure_units_ci95": [
         9.910172,
@@ -10240,11 +10302,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 10.47,
       "new_exposure_units_ci95": [
         10.156563,
@@ -10406,11 +10469,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 10.46,
       "new_exposure_units_ci95": [
         10.104453,
@@ -10572,11 +10636,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 11.27,
       "new_exposure_units_ci95": [
         10.960343,
@@ -10738,11 +10803,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 11.41,
       "new_exposure_units_ci95": [
         11.075043,
@@ -10904,11 +10970,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 11.09,
       "new_exposure_units_ci95": [
         10.758811,
@@ -11070,11 +11137,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 3.19,
       "new_exposure_units_ci95": [
         3.0124,
@@ -11236,11 +11304,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 3.045,
       "new_exposure_units_ci95": [
         2.856379,
@@ -11402,11 +11471,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 3.005,
       "new_exposure_units_ci95": [
         2.834551,
@@ -11568,11 +11638,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 8.79,
       "new_exposure_units_ci95": [
         8.501354,
@@ -11734,11 +11805,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 8.89,
       "new_exposure_units_ci95": [
         8.592398,
@@ -11900,11 +11972,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 8.675,
       "new_exposure_units_ci95": [
         8.376702,
@@ -12066,11 +12139,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 11.45,
       "new_exposure_units_ci95": [
         11.161301,
@@ -12232,11 +12306,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 11.245,
       "new_exposure_units_ci95": [
         10.934165,
@@ -12398,11 +12473,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 11.34,
       "new_exposure_units_ci95": [
         11.020908,
@@ -12564,11 +12640,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 3.435,
       "new_exposure_units_ci95": [
         3.245216,
@@ -12730,11 +12807,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 3.63,
       "new_exposure_units_ci95": [
         3.421445,
@@ -12896,11 +12974,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 3.45,
       "new_exposure_units_ci95": [
         3.251675,
@@ -13062,11 +13141,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 9.11,
       "new_exposure_units_ci95": [
         8.812073,
@@ -13228,11 +13308,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 9.155,
       "new_exposure_units_ci95": [
         8.890612,
@@ -13394,11 +13475,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 9.0,
       "new_exposure_units_ci95": [
         8.714917,
@@ -13560,11 +13642,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -13726,11 +13809,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -13892,11 +13976,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -14058,11 +14143,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -14224,11 +14310,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -14390,11 +14477,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -14556,11 +14644,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -14722,11 +14811,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -14888,11 +14978,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -15054,11 +15145,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -15220,11 +15312,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -15386,11 +15479,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -15552,11 +15646,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -15718,11 +15813,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -15884,11 +15980,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -16050,11 +16147,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -16216,11 +16314,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -16382,11 +16481,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -16548,11 +16648,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -16714,11 +16815,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -16880,11 +16982,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -17046,11 +17149,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -17212,11 +17316,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -17378,11 +17483,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -17544,11 +17650,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -17710,11 +17817,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -17876,11 +17984,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -18042,11 +18151,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -18208,11 +18318,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -18374,11 +18485,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -18540,11 +18652,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -18706,11 +18819,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -18872,11 +18986,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -19038,11 +19153,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -19204,11 +19320,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -19370,11 +19487,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -19536,11 +19654,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -19702,11 +19821,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -19868,11 +19988,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -20034,11 +20155,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -20200,11 +20322,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -20366,11 +20489,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -20532,11 +20656,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -20698,11 +20823,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -20864,11 +20990,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -21030,11 +21157,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -21196,11 +21324,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -21362,11 +21491,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -21528,11 +21658,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -21694,11 +21825,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -21860,11 +21992,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -22026,11 +22159,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -22192,11 +22326,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -22358,11 +22493,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -22524,11 +22660,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -22690,11 +22827,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -22856,11 +22994,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -23022,11 +23161,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -23188,11 +23328,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -23354,11 +23495,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -23520,11 +23662,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -23686,11 +23829,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -23852,11 +23996,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -24018,11 +24163,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -24184,11 +24330,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -24350,11 +24497,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -24516,11 +24664,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -24682,11 +24831,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -24848,11 +24998,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -25014,11 +25165,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -25180,11 +25332,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -25346,11 +25499,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -25512,11 +25666,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -25678,11 +25833,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -25844,11 +26000,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -26010,11 +26167,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -26176,11 +26334,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -26342,11 +26501,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -26508,11 +26668,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -26674,11 +26835,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -26840,11 +27002,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -27006,11 +27169,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -27172,11 +27336,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -27338,11 +27503,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -27504,11 +27670,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -27670,11 +27837,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -27836,11 +28004,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -28002,11 +28171,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -28168,11 +28338,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -28334,11 +28505,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -28500,11 +28672,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -28666,11 +28839,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -28832,11 +29006,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -28998,11 +29173,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -29164,11 +29340,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -29330,11 +29507,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -29496,11 +29674,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -29662,11 +29841,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -29828,11 +30008,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -29994,11 +30175,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -30160,11 +30342,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -30326,11 +30509,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -30492,11 +30676,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -30658,11 +30843,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -30824,11 +31010,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -30990,11 +31177,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -31156,11 +31344,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -31322,11 +31511,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -31488,11 +31678,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -31654,11 +31845,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -31820,11 +32012,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -31986,11 +32179,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -32152,11 +32346,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -32318,11 +32513,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -32484,11 +32680,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -32650,11 +32847,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -32816,11 +33014,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -32982,11 +33181,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -33148,11 +33348,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -33314,11 +33515,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -33480,11 +33682,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -33646,11 +33849,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -33812,11 +34016,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -33978,11 +34183,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -34144,11 +34350,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -34310,11 +34517,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -34476,11 +34684,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -34642,11 +34851,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -34808,11 +35018,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -34974,11 +35185,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -35140,11 +35352,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -35306,11 +35519,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -35472,11 +35686,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -35638,11 +35853,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -35804,11 +36020,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -35970,11 +36187,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -36136,11 +36354,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -36302,11 +36521,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -36468,11 +36688,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -36634,11 +36855,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -36800,11 +37022,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -36966,11 +37189,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -37132,11 +37356,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -37298,11 +37523,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -37464,11 +37690,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -37630,11 +37857,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -37796,11 +38024,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -37962,11 +38191,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -38128,11 +38358,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -38294,11 +38525,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -38460,11 +38692,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -38626,11 +38859,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -38792,11 +39026,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -38958,11 +39193,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -39124,11 +39360,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -39290,11 +39527,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -39456,11 +39694,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -39622,11 +39861,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -39788,11 +40028,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -39954,11 +40195,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -40120,11 +40362,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -40286,11 +40529,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -40452,11 +40696,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -40618,11 +40863,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -40784,11 +41030,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -40950,11 +41197,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -41116,11 +41364,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -41282,11 +41531,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -41448,11 +41698,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -41614,11 +41865,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -41780,11 +42032,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -41946,11 +42199,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -42112,11 +42366,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -42278,11 +42533,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -42444,11 +42700,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -42610,11 +42867,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -42776,11 +43034,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -42942,11 +43201,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -43108,11 +43368,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -43274,11 +43535,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -43440,11 +43702,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -43606,11 +43869,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -43772,11 +44036,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -43938,11 +44203,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -44104,11 +44370,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -44270,11 +44537,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -44436,11 +44704,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -44602,11 +44871,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -44768,11 +45038,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -44934,11 +45205,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -45100,11 +45372,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -45266,11 +45539,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -45432,11 +45706,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -45598,11 +45873,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -45764,11 +46040,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -45930,11 +46207,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -46096,11 +46374,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -46262,11 +46541,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -46428,11 +46708,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -46594,11 +46875,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -46760,11 +47042,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -46926,11 +47209,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -47092,11 +47376,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -47258,11 +47543,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -47424,11 +47710,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -47590,11 +47877,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -47756,11 +48044,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -47922,11 +48211,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -48088,11 +48378,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -48254,11 +48545,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -48420,11 +48712,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -48586,11 +48879,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -48752,11 +49046,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -48918,11 +49213,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -49084,11 +49380,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -49250,11 +49547,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -49416,11 +49714,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -49582,11 +49881,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -49748,11 +50048,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -49914,11 +50215,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -50080,11 +50382,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -50246,11 +50549,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -50412,11 +50716,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -50578,11 +50883,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -50744,11 +51050,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -50910,11 +51217,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -51076,11 +51384,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -51242,11 +51551,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -51408,11 +51718,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -51574,11 +51885,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -51740,11 +52052,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -51906,11 +52219,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -52072,11 +52386,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,
@@ -52238,11 +52553,12 @@
         0.0,
         0.0
       ],
-      "recovery_completion_tick": -1.0,
+      "recovery_completion_tick": null,
       "recovery_completion_tick_ci95": [
-        0.0,
-        -1.0
+        null,
+        null
       ],
+      "recovery_completion_tick_observations": 0,
       "new_exposure_units": 0.0,
       "new_exposure_units_ci95": [
         0.0,

@@ -8,7 +8,7 @@ python benchmark.py
 python plot_results.py
 ```
 
-The default run produces exactly 63,000 paired trials:
+The default run produces exactly 63,000 paired trials and 3,024,000 auditable task events:
 
 `7 policies × 5 disruptions × 3 workload intensities × 3 task-criticality classes × 200 trials`.
 
@@ -17,6 +17,7 @@ Each episode lasts 120 abstract ticks. Retry attempts preserve the original logi
 ## Outputs
 
 - `results/trials.csv.gz` — raw trial rows;
+- `results/task-events.csv.gz` — raw task events used to recompute latency and recovery metrics;
 - `results/benchmark.json` — configuration summaries and confidence intervals;
 - `results/figure-c3-frontier.svg` — security–availability frontier;
 - `results/RESULTS.md` — interpretation after the full run.
