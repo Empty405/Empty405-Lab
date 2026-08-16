@@ -1,6 +1,6 @@
 import csv,gzip,json,tempfile,unittest
 from pathlib import Path
-import c6_benchmark as benchmark
+import benchmark
 class Tests(unittest.TestCase):
  def test_matrix(self):
   with tempfile.TemporaryDirectory() as tmp:r=benchmark.run(1,Path(tmp))
