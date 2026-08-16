@@ -1,35 +1,34 @@
 # C6 — Budget recovery / decay
 
 **Program:** `001-mcp-inference-security`  
-**Track:** C  
+**Track:** C — Shared-budget problem  
 **Module:** C6  
-**Status:** Scaffold / not yet researched
+**Status:** Experiment design v0.1
 
 ## Простими словами
 
-Досліджує, коли і як використаний бюджет може відновлюватися або згасати.
+Старі дані можуть втрачати практичну цінність, hidden state може змінитися, а бізнесу потрібні нові відповіді. Але просте обнулення disclosure budget дозволяє повторно розкрити ті самі або пов’язані факти й накопичити небезпечну історію. C6 відділяє decay корисності від decay knowledge та перевіряє, коли recovery можна дозволити без прихованого lifetime exposure.
 
-## Початкове дослідницьке питання
+## Дослідницьке питання
 
-> За яких умов цей механізм або проблема реально змінює безпеку, реконструкцію інформації, корисність чи вартість системи?
+> Які recovery policies відновлюють legitimate utility після виснаження budget, не дозволяючи administrative reset, time decay або state change маскувати довгострокове накопичення реконструйованої інформації?
 
-## Межі модуля
+## Гіпотеза
 
-Цей файл поки є карткою-навігатором, а не готовим науковим висновком. Перед експериментом тут потрібно окремо записати припущення, те, що модуль не досліджує, залежності від інших треків і критерії зупинки.
+Fixed-window reset і простий linear decay покращують короткострокову availability, але створюють повторне exposure та historical reconstruction. Version-aware і evidence-based recovery повинні безпечніше повертати capacity після підтвердженої зміни state, однак будуть консервативнішими, дорожчими та чутливими до помилок change detector.
 
-## Майбутня структура дослідження
+## Нульова гіпотеза
 
-- `README.md` — питання, гіпотеза, межі та поточний статус;
-- `architecture.md` — компоненти, потоки даних і trust boundaries;
-- `related-work.md` — попередні роботи та джерела;
-- `experiment-design.md` — змінні, контролі, сценарії та процедура;
-- `metrics.md` — формули, одиниці й інваріанти;
-- `falsification.md` — результат, який послабить або спростує гіпотезу;
-- `results/` — сирі результати, таблиці й графіки після запуску.
+Після вирівнювання request history, hidden-state schedule та lifetime evaluator recovery policies не створюють практично значущої різниці, або будь-яке utility-покращення досягається лише пропорційним збільшенням lifetime reconstructability.
+
+## Одиниця аналізу
+
+Один **multi-epoch disclosure episode**: послідовність state versions, requests, releases, budget transitions і evaluator reconstruction over time. Deployable policy бачить лише дозволені timestamps, versions та change evidence; lifetime evaluator зберігає всю історію.
+
+## Межі
+
+C6 досліджує time-based, window-based, version-aware та evidence-based recovery. Він не визначає юридичне право на забуття, не стирає пам’ять зовнішнього спостерігача, не вирішує semantic observer errors (D), temporal inference повністю (E) або distributed history (F).
 
 ## Наступний крок
 
-1. Пояснити проблему одним конкретним прикладом.
-2. Сформулювати вузьку гіпотезу й нульову гіпотезу.
-3. Визначити, що буде доказом проти нашої ідеї.
-4. Лише після цього проєктувати експеримент і писати код.
+Реалізувати paired benchmark із raw epoch events, lifetime exposure ledger, reconstruction evaluator, invariant tests і utility–freshness–historical-risk frontier.
