@@ -71,16 +71,12 @@ def validate_results_dir(results: Path) -> dict[str, Any]:
         raise RuntimeError("raw artifacts contain no data rows")
 
     declared_counts = {
-        name: expected
-        for name in counts
-        if (expected := declared_artifact_rows(metadata, name)) is not None
+        name: expected for name in counts if (expected := declared_artifact_rows(metadata, name)) is not None
     }
     for name, expected in declared_counts.items():
         actual = counts[name]
         if actual != expected:
-            raise RuntimeError(
-                f"{name} row mismatch: metadata={expected:,}, file={actual:,}"
-            )
+            raise RuntimeError(f"{name} row mismatch: metadata={expected:,}, file={actual:,}")
 
     hashes = {metadata_path.name: sha256_file(metadata_path)}
     hashes.update({path.name: sha256_file(path) for path in raw_files})
