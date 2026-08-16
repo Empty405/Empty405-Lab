@@ -53,9 +53,7 @@ class ResearchToolsTests(unittest.TestCase):
             metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
             metadata["task_event_rows"] = 3
             metadata_path.write_text(json.dumps(metadata), encoding="utf-8")
-            with gzip.open(
-                results / "task-events.csv.gz", "wt", newline="", encoding="utf-8"
-            ) as handle:
+            with gzip.open(results / "task-events.csv.gz", "wt", newline="", encoding="utf-8") as handle:
                 writer = csv.writer(handle)
                 writer.writerow(["event"])
                 writer.writerows([[1], [2], [3]])
