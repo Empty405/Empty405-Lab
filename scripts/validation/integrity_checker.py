@@ -38,6 +38,26 @@ def count_gzip_rows(path: Path) -> int:
         raise RuntimeError(f"{path.name}: unreadable compressed CSV: {error}") from error
 
 
+def declared_artifact_rows(metadata: dict[str, Any], filename: str) -> int | None:
+    """Return the declared row count for one raw artifact, when available."""
+    if filename == "trials.csv.gz":
+        return declared_rows(metadata, required=False)
+
+    artifact = filename.removesuffix(".csv.gz").replace("-", "_")
+    candidates = [f"{artifact}_rows"]
+    if artifact.endswith("s"):
+        candidates.append(f"{artifact[:-1]}_rows")
+
+    for key in candidates:
+        value = metadata.get(key)
+        if value is None:
+            continue
+        if isinstance(value, bool) or not isinstance(value, int) or value < 0:
+            raise RuntimeError(f"{key}: expected a non-negative integer")
+        return value
+    return None
+
+
 def validate_results_dir(results: Path) -> dict[str, Any]:
     metadata_path = results / "benchmark.json"
     metadata = load_metadata(metadata_path, require_rows=False)
@@ -50,16 +70,25 @@ def validate_results_dir(results: Path) -> dict[str, Any]:
     if total <= 0:
         raise RuntimeError("raw artifacts contain no data rows")
 
-    expected = declared_rows(metadata, required=False)
-    if expected is not None and total != expected:
-        raise RuntimeError(f"raw row mismatch: metadata={expected:,}, files={total:,}")
+    declared_counts = {
+        name: expected
+        for name in counts
+        if (expected := declared_artifact_rows(metadata, name)) is not None
+    }
+    for name, expected in declared_counts.items():
+        actual = counts[name]
+        if actual != expected:
+            raise RuntimeError(
+                f"{name} row mismatch: metadata={expected:,}, file={actual:,}"
+            )
 
     hashes = {metadata_path.name: sha256_file(metadata_path)}
     hashes.update({path.name: sha256_file(path) for path in raw_files})
     return {
         "raw_files": counts,
         "raw_rows": total,
-        "declared_rows": expected,
+        "declared_rows": declared_counts.get("trials.csv.gz"),
+        "declared_raw_files": declared_counts,
         "sha256": hashes,
     }
 
